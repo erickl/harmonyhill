@@ -1,0 +1,35 @@
+
+.section {
+    padding: 0 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    align-items: center;
+}
+
+.textBody {
+    /* "margin-on" - assuming this adds your custom spacing */
+    padding: 2rem; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Desktop behaviors (Large screens / lg) */
+@media (min-width: 992px) {
+    .textBody {
+        /* "col-lg-6" - takes up exactly half the container */
+        flex: 0 0 50%;
+        max-width: 50%;
+
+        /* "order-lg-2" - pushes this div to the second position in the row */
+        order: 2;
+
+        /* "margin-on" logic for desktop */
+        padding: 4rem; 
+    }
+}

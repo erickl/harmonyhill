@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import OurVillas from "@/components/OurVillas";
 import HeroVideo from "@/components/HeroVideo";
 import AboutUs from "@/components/AboutUs";
+import NaturesKitchen from "@/components/NaturesKitchen";
 
 type Props = Omit<ImageProps, "src"> & {
     srcLight: string;
@@ -28,6 +29,7 @@ export default function Home() {
                 <HeroVideo />
                 <AboutUs />
                 <OurVillas />
+                <NaturesKitchen />
             </main>
 
         </div>
