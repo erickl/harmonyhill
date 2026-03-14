@@ -27,10 +27,6 @@
     position: relative;
 }
 
-.emblaImg {
-    object-fit: cover;
-}
-
 /* Button Styling */
 .emblaButton {
     position: absolute;

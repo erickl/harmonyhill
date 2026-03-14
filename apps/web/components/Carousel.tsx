@@ -3,6 +3,7 @@ import React, { useCallback } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react'; // Or your React Icons
+import RoundedImage from "./RoundedImage";
 import styles from "./Carousel.module.css";
 
 const images = [
@@ -16,12 +17,7 @@ const images = [
     { src: '/images/living-room-villa-1.avif', alt: 'spacious living room', description: "Convene with your family and friends over breakfast, in this spacious, brightliving room" },
     { src: '/images/villa-1-taking-bath.avif', alt: 'luxurious copper bath tub',  description: "Take a relaxing hot soak in a handmade copper bathtub"},
     { src: '/images/infinity-pool-view.webp', alt: 'jungle infinity pool',  description: "Indulge in an afternoon dip after a long day of relaxing or adventures"},
-
-
 ];
-
-//className="img-fluid"     className="carousel-caption   className="custom-rounded-img"    className="carousel-inner
-//className="carousel-item active"     className="carousel-item"
 
 export default function Carousel() {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -37,12 +33,7 @@ export default function Carousel() {
                 <div className={styles.emblaContainer}>
                 {images.map((img, index) => (
                     <div className={styles.emblaSlide} key={index}>
-                        <Image 
-                            src={img.src} 
-                            alt={img.alt} 
-                            fill 
-                            className={styles.emblaImg} 
-                        />
+                        <RoundedImage src={img.src} alt={img.alt} description={img.description}/>
                     </div>
                 ))}
                 </div>
