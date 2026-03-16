@@ -6,6 +6,7 @@ import HeroVideo from "@/components/HeroVideo";
 import AboutUs from "@/components/AboutUs";
 import NaturesKitchen from "@/components/NaturesKitchen";
 import StayIn from "@/components/StayIn";
+import Explore from "@/components/Explore";
 
 type Props = Omit<ImageProps, "src"> & {
     srcLight: string;
@@ -32,6 +33,7 @@ export default function Home() {
                 <OurVillas />
                 <NaturesKitchen />
                 <StayIn />
+                <Explore />
             </main>
 
         </div>

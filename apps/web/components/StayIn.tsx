@@ -25,7 +25,10 @@ export default function StayIn() {
                     </p>
                 </div>
                 <div>
-                    <RoundedImage src={"/images/ricefield2-resize.avif"} alt={"Lush rice paddies near Harmony Hill"}/>
+                    <RoundedImage 
+                        src={"/images/ricefield2-resize.avif"} 
+                        alt={"Lush rice paddies near Harmony Hill"}
+                    />
                 </div>
             </div>
         </section>
