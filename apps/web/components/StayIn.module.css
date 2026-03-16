@@ -1,0 +1,20 @@
+.section {
+    padding: 0 10px;
+}
+
+.sectionBody {
+    margin: 0;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    /* One column on mobile */
+    gap: 2rem;
+}
+
+@media (min-width: 992px) {
+    .sectionBody {
+        /* Split into two equal columns (50% each) */
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -5,6 +5,7 @@ import OurVillas from "@/components/OurVillas";
 import HeroVideo from "@/components/HeroVideo";
 import AboutUs from "@/components/AboutUs";
 import NaturesKitchen from "@/components/NaturesKitchen";
+import StayIn from "@/components/StayIn";
 
 type Props = Omit<ImageProps, "src"> & {
     srcLight: string;
@@ -30,6 +31,7 @@ export default function Home() {
                 <AboutUs />
                 <OurVillas />
                 <NaturesKitchen />
+                <StayIn />
             </main>
 
         </div>
