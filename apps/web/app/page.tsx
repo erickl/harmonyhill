@@ -8,6 +8,7 @@ import NaturesKitchen from "@/components/NaturesKitchen";
 import StayIn from "@/components/StayIn";
 import Explore from "@/components/Explore";
 import ReadyForParadise from "@/components/ReadyForParadise";
+import Availability from "@/components/Availability";
 
 type Props = Omit<ImageProps, "src"> & {
     srcLight: string;
@@ -36,6 +37,16 @@ export default function Home() {
                 <StayIn />
                 <Explore />
                 <ReadyForParadise />
+
+                <div id="leaf-divider">
+                    <img src="/images/leaf-divider.png" alt="leafy divider" />
+                </div>
+
+                <Availability />
+
+                <div id="leaf-divider">
+                    <img src="/images/leaf-divider.png" alt="leafy divider" />
+                </div>
             </main>
         </div>
     );

@@ -1,0 +1,27 @@
+.calendarsRowWrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* The default "col-10" (Mobile-first) */
+.availabilityText {
+    text-align: center;
+    display: inline-block;
+    width: 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+
+/* The "col-md-8" (Tablets and larger) */
+@media (min-width: 768px) {
+    .availabilityText {
+        width: 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+}
