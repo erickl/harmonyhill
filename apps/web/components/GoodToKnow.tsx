@@ -12,8 +12,8 @@ export default function GoodToKnow() {
 
             <div className={styles.sectionBody}>
                 <div className={styles.heartImageContainer}>
-                    <Image src="/images/smileyinsect.avif" alt="smiling insect" className="img-fluid" />
-                    <Image src="/images/cats-heart-small.avif" alt="harmony hill kittens" className="img-fluid" />
+                    <Image src="/images/smileyinsect.avif" alt="smiling insect" height={500} width={500} />
+                    <Image src="/images/cats-heart-small.avif" alt="harmony hill kittens" height={650}  width={667} />
                 </div>
 
                 <div id="goodtoknow-points" className={styles.goodToKnowText}>
