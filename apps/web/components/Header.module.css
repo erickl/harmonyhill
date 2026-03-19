@@ -20,7 +20,6 @@
 
 .stickyBanner a {
     color: white;
-    /* Bright orange for the link */
     text-decoration: none;
     font-weight: bold;
 }
@@ -33,12 +32,8 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-
     align-items: center;
-
-    /* position on the top part of the video */
     align-self: start;
-    /* Position over video and content */
     z-index: 1;
 
     padding: 0rem 0rem;
@@ -50,18 +45,12 @@
 
 .mainNav ul {
     list-style: none;
-    /* Remove default bullet points */
     margin: 0;
-    /* Remove default margin */
     padding: 0;
-    /* Remove default padding */
-    /* display: grid;
-    grid-template-columns: repeat(5, minmax(0, 2fr)); */
     justify-content: space-between;
 }
 
 .mainNav li {
-    /* Display list items inline (horizontally)*/
     display: inline;
 }
 
