@@ -1,15 +1,8 @@
 'use client';
 
-import { useState } from "react";
-import { MasonryPhotoAlbum } from "react-photo-album";
-import Lightbox from "yet-another-react-lightbox";
-import Captions from "yet-another-react-lightbox/plugins/captions";
+import Gallery from "@/components/Gallery";
 
-import "yet-another-react-lightbox/styles.css";
-import "yet-another-react-lightbox/plugins/captions.css";
-import "react-photo-album/masonry.css";
-
-const photos = [
+const images = [
     { src: "/images/nook-deck-breakfast-1.jpeg",     width: 1440, height: 1080, alt: "wooden deck with jungle valley views"      },
     { src: "/images/waterfall-tour.jpeg",            width: 894,  height: 1280, alt: "waterfall tour"                            },
     { src: "/images/sushi.avif",                     width: 650,  height: 488,  alt: "homemade vegan sushi"                      },
@@ -29,32 +22,9 @@ const photos = [
 ];
 
 export default function JungleNookGallery() {
-    const [index, setIndex] = useState(-1);
-
     return (
         <main>
-            <div style={{ width: "100%", display: "block", padding: "1rem" }}>
-                <h1>The Jungle Nook Gallery</h1>
-                <MasonryPhotoAlbum 
-                    photos={photos}
-                    onClick={({ index }) => setIndex(index)}
-                    spacing={15}
-                    columns={3}
-                />
-
-                {/* Opens photos in slider, one by one, with descriptions */}
-                <Lightbox
-                    slides={photos}
-                    open={index >= 0}
-                    index={index}
-                    close={() => setIndex(-1)}
-                    plugins={[Captions]}
-                    captions={{
-                        descriptionTextAlign: "center",
-                        descriptionMaxLines: 3
-                    }}
-                />
-            </div>
+            <Gallery title={"The Jungle Nook Gallery"} images={images} />
         </main>
     )
 }
