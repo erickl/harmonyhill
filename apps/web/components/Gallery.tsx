@@ -1,7 +1,7 @@
 'use client';
 
 import { ImageProps } from "@/types"
-import { useState } from "react";
+import React, { useState } from "react";
 import { MasonryPhotoAlbum } from "react-photo-album";
 import Lightbox from "yet-another-react-lightbox";
 import Captions from "yet-another-react-lightbox/plugins/captions";
@@ -18,8 +18,15 @@ interface GalleryProps {
 export default function Gallery({title, images} : GalleryProps) {
     const [index, setIndex] = useState(-1);
 
+    const galleryStyle: React.CSSProperties = { 
+        width: "100%", 
+        display: "block", 
+        padding: "1rem", 
+        boxSizing: "border-box" 
+    };
+
     return (
-        <div style={{ width: "100%", display: "block", padding: "1rem" }}>
+        <div style={galleryStyle}>
             <h1>{title}</h1>
             <MasonryPhotoAlbum 
                 photos={images}
