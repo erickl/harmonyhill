@@ -1,5 +1,6 @@
 'use client';
 
+import Link from "next/link";
 import styles from "./OurVillas.module.css";
 import Carousel from "./Carousel";
 
@@ -7,15 +8,15 @@ const hhImages = [
     { src: '/images/pool-deck-view-smaller.avif', alt: 'Infinity Pool', description: "How about some forest bathing?" },
     { src: '/images/bdr-3-villa-1.jpeg', alt: 'bed room', description: "Let the early morning light wash over your face as you wake up" },
     { src: '/images/living-room-villa-1.avif', alt: 'spacious living room', description: "Convene with your family and friends over breakfast, in this spacious, brightliving room" },
-    { src: '/images/villa-1-taking-bath.avif', alt: 'luxurious copper bath tub',  description: "Take a relaxing hot soak in a handmade copper bathtub"},
-    { src: '/images/infinity-pool-view.webp', alt: 'jungle infinity pool',  description: "Indulge in an afternoon dip after a long day of relaxing or adventures"},
+    { src: '/images/villa-1-taking-bath.avif', alt: 'luxurious copper bath tub', description: "Take a relaxing hot soak in a handmade copper bathtub" },
+    { src: '/images/infinity-pool-view.webp', alt: 'jungle infinity pool', description: "Indulge in an afternoon dip after a long day of relaxing or adventures" },
 ];
 
 const jnImages = [
     { src: '/images/nook-bath.jpeg', alt: 'copper bath tub', description: "Could this be the best bath in Bali? We sure think so ^_^" },
     { src: '/images/nook-bed-view-resized.avif', alt: 'The Jungle Nook bedroom', description: "The Jungle Nook is designed to let nature flow inside" },
     { src: '/images/nook-deck.jpeg', alt: 'The Jungle Nook wooden decking', description: "A private deck with gorgeous valley views" },
-    { src: '/images/nook-bed-swans.avif', alt: 'Enjoy your secluded cottage with private kitchen',  description: "Enjoy our cosy cottage with private kitchen"},
+    { src: '/images/nook-bed-swans.avif', alt: 'Enjoy your secluded cottage with private kitchen', description: "Enjoy our cosy cottage with private kitchen" },
 ];
 
 export default function OurVillas() {
@@ -23,7 +24,7 @@ export default function OurVillas() {
         <section id="our-villas" className={styles.sectionBackground}>
             <h2 className="section-title">Our Villas</h2>
             <div className={styles.villaRow}>
-            
+
                 <div>
                     <h3 className="section-title">Harmony Hill</h3>
                     <span>The perfect retreat for families or groups. Our expansive villa features three private
@@ -82,12 +83,12 @@ export default function OurVillas() {
                             <div className={styles.featureDetail}>100% plant-based</div>
                         </div>
                     </div>
-                
+
                     <Carousel images={hhImages} />
 
                     <div className="see-more-here">
                         <br />
-                        <a href="harmonyhill-gallery.html">See more from the villa gallery &rarr;</a>
+                        <Link href="/harmonyhill-gallery">See more from the villa gallery &rarr;</Link>
                     </div>
                 </div>
 
@@ -134,12 +135,12 @@ export default function OurVillas() {
                             <div className={styles.featureDetail}>100% plant-based</div>
                         </div>
                     </div>
-                
+
                     <Carousel images={jnImages} />
 
                     <div className="see-more-here">
                         <br />
-                        <a href="junglenook-gallery.html">See more from the villa gallery &rarr;</a>
+                        <Link href="/junglenook-gallery">See more from the jungle nook gallery &rarr;</Link>
                     </div>
                 </div>
 
