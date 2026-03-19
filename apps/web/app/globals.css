@@ -392,28 +392,6 @@ ready-paradise {
     padding-top: 0px;
 }
 
-#leaf-divider {
-
-    background-color: #E8E0D0;
-    /* White background */
-
-    padding: 40px 0;
-
-}
-
-#leaf-divider img {
-    max-height: 100px;
-    /* Set max height to 20px */
-    width: 50%;
-    /* Maintain the aspect ratio */
-    display: block;
-    /* Ensures the image takes up only as much space as needed */
-    margin: 0 auto;
-    /* Center the image horizontally */
-    /* Optional: Adds some padding if needed */
-
-}
-
 #nook-title {
     font-size: 56px;
     line-height: 1;
