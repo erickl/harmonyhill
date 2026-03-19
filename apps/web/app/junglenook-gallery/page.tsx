@@ -6,7 +6,7 @@ const images = [
     { src: "/images/nook-deck-breakfast-1.jpeg",     width: 1440, height: 1080, alt: "wooden deck with jungle valley views"      },
     { src: "/images/waterfall-tour.jpeg",            width: 894,  height: 1280, alt: "waterfall tour"                            },
     { src: "/images/sushi.avif",                     width: 650,  height: 488,  alt: "homemade vegan sushi"                      },
-    { src: "/images/vegan-forest-berry-cake.avif",   width: 720,  height: 942,  alt: "scrumptious vegan berry cake"              , description: "Try our scrumptious vegan berry cake!"},
+    { src: "/images/vegan-forest-berry-cake.avif",   width: 720,  height: 942,  alt: "scrumptious vegan berry cake",             description: "Try our scrumptious vegan berry cake!"},
     { src: "/images/welcome-to-jungle-nook.avif",    width: 1200, height: 1600, alt: "bath with rice paddy views"                },
     { src: "/images/rice-paddy-tour.avif",           width: 1000, height: 762,  alt: "guided rice paddy walk"                    },
     { src: "/images/nook-bed-view.jpeg",             width: 1248, height: 936,  alt: "bed with rice paddy views"                 },
