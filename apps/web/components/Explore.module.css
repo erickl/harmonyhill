@@ -19,3 +19,29 @@
     background-color: rgba(0, 0, 0, 0.4);
     z-index: -1;
 }
+
+/* Big screen */
+@media(min-width:992px) {
+    .hideOnSmallScreens {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .hideOnBigScreens {
+        display: none;
+    }
+}
+
+/* Small screen */
+@media(max-width:992px) {
+    .hideOnSmallScreens {
+        display: none;
+    }
+
+    .hideOnBigScreens {
+        padding: 1rem;
+        display: block;
+    }
+}

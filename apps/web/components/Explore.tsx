@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Carousel from "./Carousel";
 import styles from "./Explore.module.css";
+import RoundedImage from './RoundedImage';
 
 const images = [
     {src: "/images/gunung-kawi-resize.avif", alt: "Gunung Kawi", description: "Immerse yourself in the sacred stillness of Gunung Kawi, the Valley of The Balinese Kings, or partake in a purification ritual at Tirta Empul, Bali's largest spring water temple. Both just 5mins drive away"},
@@ -18,7 +19,15 @@ export default function Explore() {
                 hidden gems.
             </p>
 
-            <Carousel images={images}/> 
+            <div className={styles.hideOnBigScreens}>
+                <Carousel images={images}/> 
+            </div>
+
+            <div className={styles.hideOnSmallScreens}>
+                {images.map((image) => {
+                    return <RoundedImage src={image.src} alt={image.alt} description={image.description}/>
+                })}
+            </div>
 
             <div className="see-more-here">
                 <br />
