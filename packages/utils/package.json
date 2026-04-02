@@ -1,0 +1,16 @@
+{
+    "name": "@harmonyhill/utils",
+    "version": "0.0.1",
+    "private": true,
+    "main": "./index.ts",
+    "types": "./index.ts",
+    "scripts": {
+        "lint": "eslint ."
+    },
+    "dependencies": {
+        "luxon": "^3.0.0"
+    },
+    "devDependencies": {
+        "@types/luxon": "^3.0.0"
+    }
+}
