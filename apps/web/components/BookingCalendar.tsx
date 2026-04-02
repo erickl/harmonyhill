@@ -1,24 +1,22 @@
 'use client';
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { DateRange, DayPicker } from 'react-day-picker';
 import { isWithinInterval, eachDayOfInterval } from 'date-fns';
 import "react-day-picker/dist/style.css";
 import styles from "./BookingCalendar.module.css";
 
 interface BookingCalendarProp {
-    title: string
+    title: string,
+    bookedDatesSerialized: number[]
 }
 
-export default function BookingCalendar({ title }: BookingCalendarProp) {
-    const bookedDatesTest = [
-        new Date(2026, 2, 25),
-        new Date(2026, 2, 26),
-        // { from: new Date(2026, 2, 29), to: new Date(2026, 2, 30) }
-    ]
+// todo: pass the booked dates down as a prop
+export default function BookingCalendar({ title, bookedDatesSerialized }: BookingCalendarProp) {
+    const bookedDates_ = bookedDatesSerialized.map((epoch) => new Date(epoch));
 
     const [selected, setSelected] = useState<DateRange>();
-    const [bookedDates, setBookedDates] = useState<Date[]>(bookedDatesTest);
+    const [bookedDates, setBookedDates] = useState<Date[]>(bookedDates_);
 
     const disabledDays = [
         ...bookedDates,
@@ -46,10 +44,6 @@ export default function BookingCalendar({ title }: BookingCalendarProp) {
             setSelected(range);
         }
     }
-
-    // useEffect(() => {
-    //     // fetch booked dates
-    // }, []);
 
     const calendarStyle = {
         "--rdp-accent-color": "rgba(17, 72, 47, 0.9)",

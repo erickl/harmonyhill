@@ -1,10 +1,45 @@
-'use client';
-
 import Link from 'next/link';
 import BookingCalendar from './BookingCalendar';
 import styles from "./Availability.module.css";
+import {makeAdapter, CollectionFilter} from "@/packages/database";
+import {toDateTime, today} from "@/packages/utils";
 
-export default function Availability() {
+//todo: import { getBookedDates } from "@harmonyhill/database";
+// parent to the calendar. Should i remove "use client" here?
+
+export default async function Availability() {
+
+    const adapter = await makeAdapter();
+
+    const getBookedDates = async(house : string) : Promise<number[]> => {
+        const filters : CollectionFilter[] = [
+            ["house", "==", house],
+            ["checkInAt", ">=", today()]
+        ];
+        const bookings = await adapter.get("bookings", filters);
+    
+        let dates = [];
+        for(const booking of bookings) {
+            let cursor = toDateTime(booking.checkInAt);
+            if(!cursor) continue;
+
+            const end = toDateTime(booking.checkOutAt);
+            if(!end) continue;
+
+            while (cursor < end) {
+                dates.push(cursor.toMillis());
+                cursor = cursor.plus({ days: 1 });
+            }
+        }
+
+        return dates;
+    }
+
+    const hhBookedDatesSerialized = await getBookedDates("harmony hill");
+    //const dates_ = dates.map((d) => new Date(d));
+    
+    //console.log(bookings);
+
     return (
         <section id="availability">
             <h2 className="section-title">Availability</h2>
@@ -21,8 +56,8 @@ export default function Availability() {
                 </p>
             </div>
             <div className={styles.calendarsRowWrapper}>
-                <BookingCalendar title="Harmony Hill"/>
-                <BookingCalendar title="The Jungle Nook"/>
+                <BookingCalendar title="Harmony Hill" bookedDatesSerialized={hhBookedDatesSerialized}/>
+                <BookingCalendar title="The Jungle Nook" bookedDatesSerialized={[]}/>
             </div>
             <div className="sub-cal-buttons">
                 <div className="booking-button">
