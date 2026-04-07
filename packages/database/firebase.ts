@@ -7,7 +7,7 @@ import { getStorage, Storage } from 'firebase-admin/storage';
 import { setGlobalOptions } from "firebase-functions/v2";
 import admin from "firebase-admin";
 
-const PROJECT_ID = process.env.FIREBASE_PROJECT_ID;
+const PROJECT_ID = "harmonyhill-1";//process.env.FIREBASE_PROJECT_ID;
 process.env.GCLOUD_PROJECT = PROJECT_ID;
 process.env.GOOGLE_CLOUD_PROJECT = PROJECT_ID;
 

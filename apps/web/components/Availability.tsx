@@ -9,9 +9,11 @@ export default async function Availability() {
     const adapter = await makeAdapter();
 
     const getBookedDates = async(house : string) : Promise<number[]> => {
+        const todayDate = today();
+
         const filters : CollectionFilter[] = [
             ["house", "==", house],
-            ["checkInAt", ">=", today()]
+            ["checkOutAt", ">=", todayDate]
         ];
         const bookings = await adapter.get("bookings", filters);
         //console.log(bookings);

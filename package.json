@@ -4,8 +4,8 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "emulators": "firebase emulators:start",
-    "all": "turbo run dev & firebase emulators:start",
+    "emulators": "firebase emulators:start --import=./emulator-data",
+    "all": "turbo run dev & firebase emulators:start --import=./emulator-data",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types"
