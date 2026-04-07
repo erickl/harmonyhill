@@ -46,7 +46,7 @@ export default function RootLayout({
                     <BookingButton />
                 </div>
 
-                <div style={{ position: "fixed", left: "1rem", bottom: "5rem" }}>
+                <div style={{ position: "fixed", left: "1rem", bottom: "4.5rem" }}>
                     <EmailButton />
                 </div>
 
