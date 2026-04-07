@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import localFont from "next/font/local";
 import BookingButton from "@/components/BookingButton";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import EmailButton from "@/components/EmailButton";
 import { Quattrocento } from 'next/font/google';
 import "./globals.css";
 
@@ -40,10 +41,16 @@ export default function RootLayout({
                 <Header />
                 {children}
                 <Footer />
-                <div style={{position:"fixed", right:"1rem", bottom:"1rem"}}>
+
+                <div style={{ position: "fixed", right: "1rem", bottom: "1rem" }}>
                     <BookingButton />
                 </div>
-                <div style={{position:"fixed", left:"1rem", bottom:"1rem"}}>
+
+                <div style={{ position: "fixed", left: "1rem", bottom: "5rem" }}>
+                    <EmailButton />
+                </div>
+
+                <div style={{ position: "fixed", left: "1rem", bottom: "1rem" }}>
                     <WhatsAppButton />
                 </div>
             </body>
