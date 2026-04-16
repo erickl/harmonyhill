@@ -80,14 +80,13 @@ export function getDatesBetween(start: any, end: any, dates: Record<string, any[
         const endDt = toDateTime(end);
         if (!endDt) return dates;
 
-        if (isEmpty(startDt) || isEmpty(endDt)) return dates;
+        //if (isEmpty(startDt) || isEmpty(endDt)) return dates;
 
         let current = startDt.startOf('day');
         while (current < endDt.startOf('day')) {
             const month = `${current.month}`;
-            if (!exists(dates, month)) {
-                dates[month] = [];
-            }
+            // if (!exists(dates, month)) dates[month] = []; // todo: not accepted by TS
+            dates[month] ??= [];
             dates[month].push(current.day);
             current = current.plus({ days: 1 });
         }

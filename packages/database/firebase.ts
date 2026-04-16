@@ -34,6 +34,8 @@ const getAdminApp = (): App => {
             projectId: PROJECT_ID,
         });
     } else {
+        //console.log('HAS KEY:', !!process.env.FIREBASE_PRIVATE_KEY);
+
         //const serviceAccountPath = process.env.FIREBASE_SERVICE_ACCOUNT_PATH || "";
         // const serviceAccount = require(serviceAccountPath);
         const credential: admin.ServiceAccount = {
@@ -43,7 +45,7 @@ const getAdminApp = (): App => {
         }
 
         const appOptions = {
-            credential: isEmulator ? admin.credential.applicationDefault() : admin.credential.cert(credential),
+            credential: admin.credential.cert(credential),
             storageBucket: `${PROJECT_ID}.firebasestorage.app`
         };
 
