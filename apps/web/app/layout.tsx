@@ -6,7 +6,7 @@ import BookingButton from "@/components/BookingButton";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import EmailButton from "@/components/EmailButton";
 import { Quattrocento } from 'next/font/google';
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleTagManager } from '@next/third-parties/google';
 import "./globals.css";
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
@@ -52,6 +52,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <GoogleTagManager gtmId="GTM-N5VDX2B4" />
+            
 
             <body className={`${geistSans.variable} ${geistMono.variable} ${quattrocento.className}`}>
                 <Header />
