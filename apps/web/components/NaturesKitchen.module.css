@@ -5,7 +5,7 @@
 
 .content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0;
     align-items: center;
 }
@@ -21,6 +21,10 @@
 
 /* Desktop behaviors (Large screens / lg) */
 @media (min-width: 992px) {
+    .content {
+        flex-direction: row;
+    }
+
     .textBody {
         /* "col-lg-6" - takes up exactly half the container */
         flex: 0 0 50%;
