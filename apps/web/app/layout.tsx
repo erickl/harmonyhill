@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         title: 'Harmony Hill | Vegan Luxury Villa',
         description: 'Private infinity pool, jungle views, and vegan private chef.',
         images: [{
-            url: `${baseUrl}/images/nook-bed-view-resized.avif`,
+            url: `${baseUrl}/images/nook-bed-view.avif`,
             width: 1000,
             height: 750,
         }],

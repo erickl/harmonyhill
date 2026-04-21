@@ -5,17 +5,17 @@ import styles from "./OurVillas.module.css";
 import Carousel from "./Carousel";
 
 const hhImages = [
-    { src: '/images/pool-deck-view-smaller.avif', alt: 'Infinity Pool', description: "How about some forest bathing?" },
-    { src: '/images/bdr-3-villa-1.jpeg', alt: 'bed room', description: "Let the early morning light wash over your face as you wake up" },
+    { src: '/images/pool-deck-view.avif', alt: 'Infinity Pool', description: "How about some forest bathing?" },
+    { src: '/images/bdr-3-villa-1.avif', alt: 'bed room', description: "Let the early morning light wash over your face as you wake up" },
     { src: '/images/living-room-villa-1.avif', alt: 'spacious living room', description: "Convene with your family and friends over breakfast, in this spacious, brightliving room" },
     { src: '/images/villa-1-taking-bath.avif', alt: 'luxurious copper bath tub', description: "Take a relaxing hot soak in a handmade copper bathtub" },
-    { src: '/images/infinity-pool-view.webp', alt: 'jungle infinity pool', description: "Indulge in an afternoon dip after a long day of relaxing or adventures" },
+    { src: '/images/infinity-pool-view.avif', alt: 'jungle infinity pool', description: "Indulge in an afternoon dip after a long day of relaxing or adventures" },
 ];
 
 const jnImages = [
-    { src: '/images/nook-bath.jpeg', alt: 'copper bath tub', description: "Could this be the best bath in Bali? We sure think so ^_^" },
-    { src: '/images/nook-bed-view-resized.avif', alt: 'The Jungle Nook bedroom', description: "The Jungle Nook is designed to let nature flow inside" },
-    { src: '/images/nook-deck.jpeg', alt: 'The Jungle Nook wooden decking', description: "A private deck with gorgeous valley views" },
+    { src: '/images/nook-bath.avif', alt: 'copper bath tub', description: "Could this be the best bath in Bali? We sure think so ^_^" },
+    { src: '/images/nook-bed-view.avif', alt: 'The Jungle Nook bedroom', description: "The Jungle Nook is designed to let nature flow inside" },
+    { src: '/images/nook-deck-breakfast-1.avif', alt: 'The Jungle Nook wooden decking', description: "A private deck with gorgeous valley views" },
     { src: '/images/nook-deck-view.avif', alt: 'The Jungle Nook wooden decking', description: "A private deck with gorgeous valley views" },
     { src: '/images/nook-bed-swans.avif', alt: 'Enjoy your secluded cottage with private kitchen', description: "Enjoy our cosy cottage with private kitchen" },
 ];

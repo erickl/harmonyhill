@@ -5,10 +5,10 @@ import Carousel from "@/components/Carousel";
 import styles from "./NaturesKitchen.module.css";
 
 const images = [
-    {src: "/images/marry-me-pasta.jpeg", alt: "marry me pasta" },
+    {src: "/images/marry-me-pasta.avif", alt: "marry me pasta" },
     {src: "/images/wingko-waffles-vegan.avif", alt: "vegan coconut waffles" },
     {src: "/images/sushi.avif", alt: "Vegan Sushi" },
-    {src: "/images/floating-breakfast.jpeg", alt: "floating breakfast" },
+    {src: "/images/floating-breakfast.avif", alt: "floating breakfast" },
 ];
 
 export default function NaturesKitchen() {

@@ -46,10 +46,10 @@ export default function Faq() {
                         Yes we absolutely love to welcome children 🙂 I would say about half our guests are families with children, 
                         including little ones. There’s lots of fun activities to do around.
                         There’s just a few things to consider:
-                        •⁠  ⁠Our villa is on a slope so the deck overlooks the pool below. You can see the railing 
+                        <br/>•⁠  ⁠Our villa is on a slope so the deck overlooks the pool below. You can see the railing 
                         {" "}<Link href="https://harmonyhillbali.com/harmonyhill-gallery.html " target="_blank" className="white-link">here</Link>:
-                        •⁠  ⁠⁠The pool is not fenced off
-                        •⁠  ⁠Our garden flows seamlessly into the valley and surrounding nature. That means native Bali wildlife 
+                        <br/>•⁠  ⁠⁠The pool is not fenced off
+                        <br/>•⁠  ⁠Our garden flows seamlessly into the valley and surrounding nature. That means native Bali wildlife 
                         can sometimes visit our garden as well. We have only seen one snake in the year that we have been open and 
                         it wasn’t dangerous, but we want to call it out as encounters can always happen. 
                         On the more fun side, we get lots of butterflies, squirrels and even fireflies at night. We also have 3 cats :)
