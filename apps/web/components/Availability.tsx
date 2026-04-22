@@ -14,7 +14,7 @@ export default function Availability() {
             </p>
             <div className="availabilityText">
                 <p>Please review the available dates below and navigate to our {" "}<Link href="/book" className="green-link">booking engine</Link>{" "} to make
-                    a reservation. 
+                    a reservation.
                     <br /> You can also reach us on
                     {" "}<Link href="https://wa.me/message/TVA3I5GFI5VLO1" className="green-link">WhatsApp</Link>{" "}
                     or via {" "}<Link href="mailto:harmonyhillbali@gmail.com" target="_blank" className="green-link">email</Link>{" "} for any
@@ -24,14 +24,14 @@ export default function Availability() {
             <div className={styles.calendarsRowWrapper}>
                 {/* Loading booking data asynchronously in the server */}
                 <Suspense fallback={<div className="skeleton-loader">Loading dates...</div>}>
-                    <BookingCalendar title="Harmony Hill"/>
+                    <BookingCalendar title="Harmony Hill" />
                 </Suspense>
 
                 <Suspense fallback={<div className="skeleton-loader">Loading dates...</div>}>
-                    <BookingCalendar title="The Jungle Nook"/>
+                    <BookingCalendar title="The Jungle Nook" />
                 </Suspense>
             </div>
-            <div className="sub-cal-buttons">
+            <div className={styles.subCalButtons}>
                 <BookingButton />
                 <WhatsAppButton />
             </div>

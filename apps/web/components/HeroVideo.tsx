@@ -19,9 +19,17 @@ export default function HeroVideo() {
 
     return (
         <div className={styles.heroContainer}>
+            <Image
+                src="/images/hero-video-fallback.avif"
+                alt="Harmony Hill Villa"
+                fill
+                priority={true}
+                fetchPriority="high"
+                className="object-cover"
+            />
             <video autoPlay loop muted playsInline
                 className={styles.videoElement}
-                poster="/images/hero-video-fallback.avif"
+                // poster="/images/hero-video-fallback.avif"
                 width={video.width} height={video.height}>
                 <source 
                     src={video.src} 
@@ -34,11 +42,13 @@ export default function HeroVideo() {
                     src="/images/logo-white-transparent-background.avif" 
                     alt="Harmony Hill Logo" 
                     width="540" height="540"
-                    fetchPriority="high" 
+                    priority={true}
+                    fetchPriority="high"
                     className={styles.logo} 
                 />
 
-                <h1 className={styles.slogan}>Two Private Villas in the heart of Bali <br />
+                <h1 className={styles.slogan}>
+                    Two Private Villas in the heart of Bali <br />
                     100% Vegan
                 </h1>
             </div>

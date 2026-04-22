@@ -2,6 +2,12 @@
     margin: 2rem;
 }
 
+.subCalButtons {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
 .calendarsRowWrapper {
     display: flex;
     justify-content: center;

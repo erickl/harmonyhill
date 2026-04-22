@@ -14,6 +14,47 @@
     width: 100%;
 }
 
+.leafBullets {
+    padding: 0;
+    list-style: none;
+}
+
+.leafBulletsLi {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    /* Optional: Add space between items */
+
+    position: relative;
+    padding-left: 10px;
+    /* Add space for the leaf icon */
+    /* Aligns the first line of text with the icon */
+}
+
+
+.leafBullets svg {
+    flex-shrink: 0;
+    /* Prevents the leaf from getting squashed */
+    width: 24px;
+    /* Adjust size as needed */
+    height: auto;
+    margin-right: 15px;
+    /* Space between leaf and text */
+    margin-top: 4px;
+    /* Nudges leaf down slightly to align with first line */
+    fill: rgba(17, 72, 47, 0.9);
+}
+
+.leafBulletsLi ul {
+    display: block;
+    list-style: circle;
+    margin-left: 25px;
+    /* round bullet point move right */
+    padding-left: 10px;
+    /* distance between round bullet and text */
+    padding-top: 0px;
+}
+
 /* Shared Styles */
 .heartImageContainer {
     position: relative;

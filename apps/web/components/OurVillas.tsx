@@ -88,7 +88,7 @@ export default function OurVillas() {
 
                     <Carousel images={hhImages} />
 
-                    <div className="see-more-here">
+                    <div className={styles.seeMoreText}>
                         <br />
                         <Link href="/harmonyhill-gallery">See more from the Harmony Hill gallery &rarr;</Link>
                     </div>
@@ -140,7 +140,7 @@ export default function OurVillas() {
 
                     <Carousel images={jnImages} />
 
-                    <div className="see-more-here">
+                    <div className={styles.seeMoreText}>
                         <br />
                         <Link href="/junglenook-gallery">See more from the Jungle Nook gallery &rarr;</Link>
                     </div>

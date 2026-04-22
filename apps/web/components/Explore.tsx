@@ -34,7 +34,7 @@ export default function Explore() {
                 })}
             </div>
 
-            <div className="see-more-here">
+            <div className={styles.seeMoreText}>
                 <br />
                 <Link href="https://harmonyhillbali.com/activities" target="_blank">
                     Get inspired on what to do in and around Harmony Hill &rarr;
