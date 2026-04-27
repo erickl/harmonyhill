@@ -8,18 +8,17 @@ export default function BookingPolicy() {
             <h3 className={styles.policyHeader}>
                 Booking & Payment Terms
             </h3>
-
+            
             <div className={styles.policyBody}>
                 • <strong>Deposit</strong>: A <strong>50% deposit</strong> is required to secure your reservation. <br />
                 • <strong>Confirmation:</strong> Once we receive your request, we will send payment instructions via email
                 or WhatsApp.
                 Please complete the transfer within <strong>48 hours</strong> to confirm your stay.<br />
-                • <strong>Final Balance:</strong> The remaining 50% is due <strong>30 days prior to arrival</strong>. Please
-                note that reservations may be
-                cancelled if the final payment is not received by this deadline.<br />
-                • <strong>Last-Minute Bookings:</strong> For reservations made within 30 days of check-in, <strong>full
-                    payment</strong> is required within 24
-                hours to confirm the booking.<br />
+                {/* • <strong>Final Balance:</strong> The remaining 50% is due <strong>30 days prior to arrival</strong>. 
+                Please  note that reservations may be  cancelled if the final payment is not received by this deadline.<br /> */}
+                • <strong>Final Balance:</strong> The remaining 50% can be settled <strong>on arrival</strong>. Please
+                {/* • <strong>Last-Minute Bookings:</strong> For reservations made within 30 days of check-in, <strong>full
+                    payment</strong> is required within 24 hours to confirm the booking.<br />  */}
             </div>
 
             <br />
