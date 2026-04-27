@@ -5,7 +5,7 @@ import styles from "./OurVillas.module.css";
 import Carousel from "./Carousel";
 
 const hhImages = [
-    { src: '/images/pool-deck-view.avif', alt: 'Infinity Pool', description: "How about some forest bathing?" },
+    // { src: '/images/pool-deck-view.avif', alt: 'Infinity Pool', description: "How about some forest bathing?" },
     { src: '/images/bdr-3-villa-1.avif', alt: 'bed room', description: "Let the early morning light wash over your face as you wake up" },
     { src: '/images/living-room-villa-1.avif', alt: 'spacious living room', description: "Convene with your family and friends over breakfast, in this spacious, brightliving room" },
     { src: '/images/villa-1-taking-bath.avif', alt: 'luxurious copper bath tub', description: "Take a relaxing hot soak in a handmade copper bathtub" },

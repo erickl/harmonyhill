@@ -1,5 +1,3 @@
-'use client';
-
 import styles from "./StayIn.module.css";
 import RoundedImage from "./RoundedImage";
 

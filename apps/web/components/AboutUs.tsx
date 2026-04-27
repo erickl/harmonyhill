@@ -1,5 +1,3 @@
-'use client';
-
 import styles from "./AboutUs.module.css";
 
 export default function AboutUs() {
@@ -11,7 +9,7 @@ export default function AboutUs() {
                 <p>...with the food that nourishes your body</p>
                 <p>...with the beautiful Balinese people and their cultural heritage</p>
                 <p>...with yourself</p>
-                <br/>
+                <br />
                 <p>Harmony Hill and The Jungle Nook are our luxurious villas, tucked away in a traditional village in the
                     heart of Bali. Perched upon
                     a ridge, overlooking a gorgeous valley and luscious rice fields, we are a scenic 30 minute drive away
@@ -19,7 +17,7 @@ export default function AboutUs() {
                     both the bustling town of Ubud in the South and the jaw dropping volcanic landscapes of Mount Batur in
                     the North.
                 </p>
-                <br/>
+                <br />
                 <p>
                     Our aim is to offer you a unique opportunity to find sanctuary in nature, while enjoying the comfort of
                     our beautiful villa and the thoughtful service of our team.

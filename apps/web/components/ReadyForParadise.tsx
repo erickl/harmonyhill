@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import styles from "./ReadyForParadise.module.css";
 import RoundedImage from './RoundedImage';
@@ -9,18 +7,21 @@ export default function ReadyForParadise() {
         <section id="ready-paradise" className={styles.section}>
             <div className={styles.sectionBody}>
                 <div className={styles.desktopOnlyImage}>
-                    <RoundedImage src={"/images/floating-breakfast.avif"} alt={"Complimentary floating breakfast"}/>
+                    <RoundedImage 
+                        src={"/images/floating-breakfast.avif"} 
+                        alt={"Complimentary floating breakfast"} 
+                    />
                 </div>
                 <div id="inclusions" className={styles.textContent}>
                     <h2 className="section-title">Ready for Paradise?</h2>
                     <div className={styles.supportUsText}>
-                        Support us by booking directly and we'll treat you to a complimentary floating 
+                        Support us by booking directly and we'll treat you to a complimentary floating
                         breakfast (Harmony  Hill) or a free dessert tasting (The Jungle Nook).
                     </div>
 
-                    <br/>
+                    <br />
 
-                    <strong>What is waiting for you at Harmony Hill and The Jungle Nook?</strong><br/>
+                    <strong>What is waiting for you at Harmony Hill and The Jungle Nook?</strong><br />
                     <div>&hearts; Delicious plantbased breakfast included</div>
                     <div>&hearts; Complimentary arabica coffee, tea and tropical fruit basket on arrival</div>
                     <div>&hearts; Complimentary guided rice paddy, village & waterfall walk</div>
@@ -32,9 +33,9 @@ export default function ReadyForParadise() {
                         freshly prepared at your request
                     </div>
                 </div>
-               
+
                 <div className={styles.mobileOnlyContent}>
-                    <RoundedImage src={"/images/floating-breakfast.avif"} alt={"Complimentary floating breakfast"}/>
+                    <RoundedImage src={"/images/floating-breakfast.avif"} alt={"Complimentary floating breakfast"} />
                 </div>
             </div>
         </section>
