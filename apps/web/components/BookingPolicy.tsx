@@ -16,7 +16,7 @@ export default function BookingPolicy() {
                 Please complete the transfer within <strong>48 hours</strong> to confirm your stay.<br />
                 {/* • <strong>Final Balance:</strong> The remaining 50% is due <strong>30 days prior to arrival</strong>. 
                 Please  note that reservations may be  cancelled if the final payment is not received by this deadline.<br /> */}
-                • <strong>Final Balance:</strong> The remaining 50% can be settled <strong>on arrival</strong>. Please
+                • <strong>Final Balance:</strong> The remaining 50% can be settled <strong>on arrival</strong>.
                 {/* • <strong>Last-Minute Bookings:</strong> For reservations made within 30 days of check-in, <strong>full
                     payment</strong> is required within 24 hours to confirm the booking.<br />  */}
             </div>

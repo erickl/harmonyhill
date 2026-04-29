@@ -1,5 +1,3 @@
-'use client';
-
 import Gallery from "@/components/Gallery";
 import FloatingButtons from "@/components/FloatingButtons";
 
