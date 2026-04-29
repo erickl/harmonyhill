@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "harmonyhill-1"
-  }
+  },
+  "targets": {
+    "harmonyhill-1": {
+      "hosting": {
+        "web": [
+          "harmonyhill-public"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

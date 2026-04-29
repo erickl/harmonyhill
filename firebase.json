@@ -6,18 +6,16 @@
         "rules": "storage.rules"
     },
     "hosting": {
-        "public": "build",
+        "source": "apps/web",
+        "target": "web",
         "ignore": [
             "firebase.json",
             "**/.*",
             "**/node_modules/**"
         ],
-        "rewrites": [
-            {
-                "source": "**",
-                "destination": "/index.html"
-            }
-        ]
+        "frameworksBackend": {
+            "region": "asia-southeast1"
+        }
     },
     "functions": [
         {

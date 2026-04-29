@@ -1,0 +1,14 @@
+# apps/website/apphosting.yaml
+runtime: nodejs22
+
+runConfig:
+  # This is the "Cold Start" fix we discussed. 
+  # Keeping 1 instance warm ensures the site is instant for guests. Might cost more money
+  # minInstances: 1
+  memory: 512Mi
+  # Set this to the region closest to Bali/Singapore for best speed
+  location: asia-southeast1
+
+scripts:
+  # This tells Firebase how to build your site from within the monorepo folder
+  buildCommand: npm run build

@@ -1,6 +1,20 @@
 /** @type {import('next').NextConfig} */
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// These two lines replace 'require' for finding your monorepo root
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const nextConfig = {
-    transpilePackages: ["@harmonyhill/firebase-config"],
+    // output: 'standalone',
+    outputFileTracingRoot: path.join(__dirname, '../../'),
+    // experimental: {turbo: false},
+    transpilePackages: [
+        "@harmonyhill/firebase-config", 
+        "@harmonyhill/database", 
+        "@harmonyhill/utils"
+    ],
     async redirects() {
         return [{
             source: '/junglenook',
