@@ -43,3 +43,4 @@ harmonyhill-1-service-account-key.json
 *.log
 
 emulator-data
+.env*.local
