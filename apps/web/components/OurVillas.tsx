@@ -3,6 +3,7 @@
 import Link from "next/link";
 import styles from "./OurVillas.module.css";
 import Carousel from "./Carousel";
+import LazySection from "./LazySection";
 
 const hhImages = [
     // { src: '/images/pool-deck-view.avif', alt: 'Infinity Pool', description: "How about some forest bathing?" },
@@ -86,7 +87,9 @@ export default function OurVillas() {
                         </div>
                     </div>
 
-                    <Carousel images={hhImages} />
+                    <LazySection>
+                        <Carousel images={hhImages} />
+                    </LazySection>
 
                     <div className={styles.seeMoreText}>
                         <br />
@@ -138,7 +141,9 @@ export default function OurVillas() {
                         </div>
                     </div>
 
-                    <Carousel images={jnImages} />
+                    <LazySection>
+                        <Carousel images={jnImages} />
+                    </LazySection>
 
                     <div className={styles.seeMoreText}>
                         <br />

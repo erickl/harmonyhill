@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Carousel from "./Carousel";
 import styles from "./Explore.module.css";
 import RoundedImage from './RoundedImage';
+import LazySection from "./LazySection";
 
 const images = [
     { src: "/images/gunung-kawi.avif", alt: "Gunung Kawi", description: "Immerse yourself in the sacred stillness of Gunung Kawi, the Valley of The Balinese Kings, or partake in a purification ritual at Tirta Empul, Bali's largest spring water temple. Both just 5mins drive away" },
@@ -18,7 +19,9 @@ export default function Explore() {
             </p>
 
             <div className={styles.hideOnBigScreens}>
-                <Carousel images={images} />
+                <LazySection>
+                    <Carousel images={images} />
+                </LazySection>
             </div>
 
             <div className={styles.hideOnSmallScreens}>
