@@ -24,7 +24,7 @@
         "**/*.tsx",
         "next-env.d.ts",
         ".next/types/**/*.ts"
-    ],
+, "constants/links.ts"    ],
     "exclude": [
         "node_modules"
     ]

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Carousel from "@/components/Carousel";
+import { EXT_LINKS } from '@/constants/links';
 import styles from "./NaturesKitchen.module.css";
 
 const images = [
@@ -20,7 +21,7 @@ export default function NaturesKitchen() {
                     </p>
                     <p>Discover
                         {" "}<Link
-                            href="https://www.canva.com/design/DAGZCJNzgeA/L9Tz7Y8pdyin1PZQ9KeN7Q/view?utm_content=DAGZCJNzgeA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h99deea3dde"
+                            href={EXT_LINKS.FOOD_MENU_HH}
                             target="_blank"
                             className="green-link"
                         >
