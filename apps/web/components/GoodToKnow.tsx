@@ -30,7 +30,7 @@ export default function GoodToKnow() {
                                 fireflies dancing over the rice paddies... Just look at that little smiley face :)
                             </span>
                         </li>
-                        <li className={styles.leafBullets}>
+                        <li className={styles.leafBulletsLi}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 viewBox="0 0 640 640">
                                 <path
@@ -38,7 +38,7 @@ export default function GoodToKnow() {
                             </svg>
                             The largest and furriest creatures you're likely to encounter are our
                             four Bali kittens - all foundlings who found their way into our hearts</li>
-                        <li className={styles.leafBullets}>
+                        <li className={styles.leafBulletsLi}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 viewBox="0 0 640 640">
                                 <path
@@ -55,7 +55,7 @@ export default function GoodToKnow() {
                                 instead rely on natural ventilation to ensure you have a restful sleep.
                             </div>
                         </li>
-                        <li className={styles.leafBullets}>
+                        <li className={styles.leafBulletsLi}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 viewBox="0 0 640 640">
                                 <path
@@ -79,7 +79,7 @@ export default function GoodToKnow() {
                                 suggestions or ideas &hearts;
                             </div>
                         </li>
-                        <li className={styles.leafBullets}>
+                        <li className={styles.leafBulletsLi}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 viewBox="0 0 640 640">
                                 <path

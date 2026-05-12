@@ -1,4 +1,5 @@
 .sectionBackground {
+    padding: 2rem;
     text-align: center;
     background-image: url('/images/ricefield1.avif');
     isolation: isolate;
@@ -6,7 +7,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: white;   
+    color: white;
     padding-bottom: 2rem;
 }
 
@@ -21,12 +22,21 @@
     z-index: -1;
 }
 
+.faqItem {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
 .faqItem summary {
     font-size: 1.5em;
 }
 
 .faqAnswer {
-    text-align: center;
-    display: inline-block;
+    text-align: left;
+    display: block;
+    margin-right: auto;
     width: 83.333333%;
 }

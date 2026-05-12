@@ -6,18 +6,18 @@ export default function Faq() {
         <section id="faq" className={styles.sectionBackground} itemScope itemType="https://schema.org/FAQPage">
 
             <h2 className="section-title">Common Questions</h2>
-
-            <details className="faqItem" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+     
+            <details className={styles.faqItem} itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                 <summary itemProp="name">How far is Harmony Hill from central Ubud?</summary>
-                <div className="faqAnswer" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                <div className={styles.faqAnswer} itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                     <p itemProp="text">We are located in the peaceful Tampaksiring region, about a 30-minute drive
                         from the center of Ubud.</p>
                 </div>
             </details>
 
-            <details className="faqItem" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+            <details className={styles.faqItem} itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                 <summary itemProp="name">Is breakfast included in the stay?</summary>
-                <div className="faqAnswer" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                <div className={styles.faqAnswer} itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                     <p itemProp="text">Yes, a nourishing homecooked breakfast is included with your stay. We offer savoury
                         options like avocado toast with scrambled tofu and sweet delights like waffles and chia pudding. We
                         also pride ourselves on serving locally grown arabica coffee. For more details, please take a look
@@ -26,9 +26,9 @@ export default function Faq() {
                 </div>
             </details>
 
-            <details className="faqItem" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+            <details className={styles.faqItem} itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                 <summary itemProp="name">Can you assist with transport?</summary>
-                <div className="faqAnswer" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                <div className={styles.faqAnswer} itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                     <p itemProp="text">Absolutely. We can arrange a private driver from our village to meet you at the
                         airport, harbour or anywhere else you need.
                         Please contact us via <u><Link href="mailto:harmonyhillbali@gmail.com" target="_blank"
@@ -37,9 +37,9 @@ export default function Faq() {
                 </div>
             </details>
 
-            <details className="faqItem" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+            <details className={styles.faqItem} itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                 <summary itemProp="name">Is your villa child friendly?</summary>
-                <div className="faqAnswer" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                <div className={styles.faqAnswer} itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                     <p itemProp="text">
                         Yes we absolutely love to welcome children 🙂 I would say about half our guests are families with children,
                         including little ones. There’s lots of fun activities to do around.
