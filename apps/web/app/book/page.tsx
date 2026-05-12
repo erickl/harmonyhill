@@ -31,7 +31,7 @@ export default function Book() {
             </div>
             <SirvoyBooking />
 
-            <div style={{marginLeft: "1.5rem;"}}>
+            <div style={{marginLeft: "1.5rem"}}>
                 Any questions? Please don't hesitate to contact us
                 <div style={{display:"flex", flexDirection:"row"}}>
                     <WhatsAppButton />

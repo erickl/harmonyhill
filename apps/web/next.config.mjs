@@ -29,6 +29,10 @@ const nextConfig = {
             destination: EXT_LINKS.FOOD_MENU_JN,
             permanent: false,
         }, {
+            source: '/index',
+            destination: '/',
+            permanent: true,
+        }, {
             // looks for any path that ends in .html, redirects to the page without .html
             source: '/:path*.html',
             destination: '/:path*', // Redirects to the same path without .html
