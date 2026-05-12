@@ -2,13 +2,19 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { EXT_LINKS } from './constants/links.ts';
+import createMDX from '@next/mdx'
 
 // These two lines replace 'require' for finding your monorepo root
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const withMDX = createMDX({
+    extension: /\.mdx?$/,
+});
+
 const nextConfig = {
     // output: 'standalone',
+    pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
     outputFileTracingRoot: path.join(__dirname, '../../'),
     // experimental: {turbo: false},
     transpilePackages: [
@@ -41,4 +47,4 @@ const nextConfig = {
     }
 };
 
-export default nextConfig;
+export default withMDX(nextConfig);
