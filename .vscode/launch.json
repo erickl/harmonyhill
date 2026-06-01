@@ -12,6 +12,15 @@
             "command": "npm run dev",
             "cwd": "${workspaceFolder}",
             "envFile": "${workspaceFolder}/.env.local"
-        }
+        }, { // Debugging the event based fireabse functions
+            "type": "node",
+            "request": "attach",
+            "name": "Debug Event Based Firebase Functions",
+            "port": 9229,
+            "restart": true,
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
     ]
 }
