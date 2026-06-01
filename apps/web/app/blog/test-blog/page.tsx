@@ -6,7 +6,7 @@ export default function BlogPostPage() {
         <article>
             <TestBlog />
 
-            <Comments slug="test-blog" />
+            {/* <Comments slug="test-blog" /> */}
         </article>
     );
 }
