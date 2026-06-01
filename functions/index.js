@@ -17,8 +17,10 @@
 import * as calendars from "./api/calendars.js";
 import * as debug from "./api/debug.js";
 import * as pms from "./api/pms.js";
+import {dailyMaintenanceCheck} from "./triggers/createActivitiesJobs.js";
 
 export { 
+    dailyMaintenanceCheck,
     calendars, 
     //debug, 
     //pms 
