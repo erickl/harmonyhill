@@ -15,7 +15,9 @@ export default function ReadyForParadise() {
                 <div id="inclusions" className={styles.textContent}>
                     <h2 className="section-title">Ready for Paradise?</h2>
                     <div className={styles.supportUsText}>
-                        Support us by booking directly and we'll treat you to a complimentary floating
+                        Support us by 
+                        {" "}<Link href={"/book"} className="white-link">booking directly</Link>{" "} 
+                        and we'll treat you to a complimentary floating
                         breakfast (Harmony  Hill) or a free dessert tasting (The Jungle Nook).
                     </div>
 
