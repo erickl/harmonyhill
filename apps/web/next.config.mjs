@@ -35,6 +35,10 @@ const nextConfig = {
             destination: EXT_LINKS.FOOD_MENU_JN,
             permanent: false,
         }, {
+            source: '/activities',
+            destination: EXT_LINKS.ACTIVITIES_MENU,
+            permanent: false,
+        },{
             source: '/index',
             destination: '/',
             permanent: true,

@@ -29,7 +29,13 @@ export default function NaturesKitchen() {
                         </Link>.
                     </p>
                     <p>In addition to our menu and seasonal suggestions, our wonderful chef is entirely at your disposal
-                        during your stay and would be more than happy to try out new recipes upon request. </p>
+                        during your stay and would be more than happy to try out new recipes upon request.
+                    </p>
+                    <p>
+                        Our kitchen is naturally kosher and halal, and we are more than happy to cater to jain requirements
+                        on request. A large part of our menu is glutenfree and we are ready to cater to any food allergies
+                        or sensitivities. Just contact us!
+                    </p>
                 </div>
 
                 <Carousel images={images} />
