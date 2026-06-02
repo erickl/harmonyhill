@@ -1,5 +1,6 @@
-import type { MDXComponents } from 'mdx/types'
-import styles from './mdx-styles.module.css'
+import type { MDXComponents } from 'mdx/types';
+import { BlogMeta } from '@/components/BlogMeta';
+import styles from './mdx-styles.module.css';
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
     return {
@@ -8,6 +9,11 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 
         // Map p tags to your paragraph style
         p: ({ children }) => <p className={styles.paragraph}>{children}</p>,
+
+        ul: ({ children }) => <ul className={styles.listWrapper}>{children}</ul>,
+        li: ({ children }) => <li className={styles.listItem}>{children}</li>,
+
+        BlogMeta: BlogMeta,
 
         ...components,
     }
