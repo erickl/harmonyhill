@@ -1,19 +1,23 @@
 .imageWrapper {
     position: relative;
     width: 100%;
-    height: 400px; /* Or whatever height fits your villa layout */
+    height: 400px;
+    /* Or whatever height fits your villa layout */
     overflow: hidden;
     isolation: isolate;
 }
 
-.roundedImg {
-    border-top-right-radius: 80px;
-    border-bottom-left-radius: 80px;
+.imgGeneral {
     overflow: hidden;
     position: relative;
     object-fit: cover;
     object-position: center;
     z-index: 1;
+}
+
+.rounding {
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
 }
 
 .caption {
@@ -25,14 +29,12 @@
     color: white;
     font-weight: 500;
     border-bottom-left-radius: 80px;
-    
+
     /* Create soft black/grey shadow behind the text */
-    background: linear-gradient(
-        to top, 
-        rgba(0, 0, 0, 0.7) 0%, 
-        rgba(0, 0, 0, 0) 100%
-    );
-    
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.7) 0%,
+            rgba(0, 0, 0, 0) 100%);
+
     /* Optional: extra legibility for very bright images */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     z-index: 2;
@@ -45,7 +47,7 @@
     line-height: 1.5;
 }
 
-.roundedImg .caption {
+.imgGeneral .caption {
     position: absolute;
     /* Absolute inside a Relative parent */
     bottom: 0 !important;
@@ -57,7 +59,7 @@
     width: 100%;
 }
 
-.roundedImg .caption span {
+.imgGeneral .caption span {
     margin-bottom: 0;
     bottom: 0 !important;
     font-size: 16px;

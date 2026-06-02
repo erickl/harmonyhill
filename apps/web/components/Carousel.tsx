@@ -4,7 +4,7 @@ import React, { useCallback, useMemo, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { ChevronLeft, ChevronRight } from 'lucide-react'; // Or your React Icons
-import RoundedImage from "./RoundedImage";
+import HHImage from "./HHImage";
 import { ImageProps } from "@/types";
 import styles from "./Carousel.module.css";
 
@@ -51,20 +51,23 @@ export default function Carousel({ images }: Deck) {
             <div className={styles.emblaViewport} ref={emblaRef}>
                 {/* 2. Container (The long strip of images) */}
                 <div className={styles.emblaContainer}>
-                    {images.map((img, index) => (
-                        <div className={styles.emblaSlide} key={index}>
-                            {slidesInView.includes(index) ? (
-                                <RoundedImage 
-                                    src={img.src} 
-                                    alt={img.alt} 
-                                    description={img.description}
-                                    index={index}
-                                />
-                            ): (
-                                <div className="w-full h-[500px] bg-neutral-800 animate-pulse" />
-                            )}
-                        </div>
-                    ))}
+                    {images.map((img, index) => {
+                        img.options = {
+                            ...img.options,
+                            index: index,
+                            rounded: true
+                        };
+
+                        return (
+                            <div className={styles.emblaSlide} key={index}>
+                                {slidesInView.includes(index) ? (
+                                    <HHImage {...img} />
+                                ) : (
+                                    <div className="w-full h-[500px] bg-neutral-800 animate-pulse" />
+                                )}
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
 

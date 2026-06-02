@@ -1,22 +1,25 @@
 import Link from 'next/link';
 import styles from "./ReadyForParadise.module.css";
-import RoundedImage from './RoundedImage';
+import HHImage from './HHImage';
 
 export default function ReadyForParadise() {
+    const floatingBfImg = {
+        src: "/images/floating-breakfast.avif",
+        alt: "Complimentary floating breakfast",
+        options : {rounded: true}
+    };
+
     return (
         <section id="ready-paradise" className={styles.section}>
             <div className={styles.sectionBody}>
                 <div className={styles.desktopOnlyImage}>
-                    <RoundedImage 
-                        src={"/images/floating-breakfast.avif"} 
-                        alt={"Complimentary floating breakfast"} 
-                    />
+                    <HHImage {...floatingBfImg} />
                 </div>
                 <div id="inclusions" className={styles.textContent}>
                     <h2 className="section-title">Ready for Paradise?</h2>
                     <div className={styles.supportUsText}>
-                        Support us by 
-                        {" "}<Link href={"/book"} className="white-link">booking directly</Link>{" "} 
+                        Support us by
+                        {" "}<Link href={"/book"} className="white-link">booking directly</Link>{" "}
                         and we'll treat you to a complimentary floating
                         breakfast (Harmony  Hill) or a free dessert tasting (The Jungle Nook).
                     </div>
@@ -37,7 +40,7 @@ export default function ReadyForParadise() {
                 </div>
 
                 <div className={styles.mobileOnlyContent}>
-                    <RoundedImage src={"/images/floating-breakfast.avif"} alt={"Complimentary floating breakfast"} />
+                    <HHImage {...floatingBfImg} />
                 </div>
             </div>
         </section>

@@ -1,5 +1,5 @@
 import styles from "./StayIn.module.css";
-import RoundedImage from "./RoundedImage";
+import HHImage from "./HHImage";
 
 export default function StayIn() {
     return (
@@ -23,9 +23,10 @@ export default function StayIn() {
                     </p>
                 </div>
                 <div>
-                    <RoundedImage
+                    <HHImage
                         src={"/images/ricefield2.avif"}
                         alt={"Lush rice paddies near Harmony Hill"}
+                        options={{rounded:true}}
                     />
                 </div>
             </div>
