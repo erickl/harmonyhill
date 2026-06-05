@@ -88,7 +88,7 @@ export default function OurVillas() {
                     </div>
 
                     <LazySection>
-                        <Carousel images={hhImages} />
+                        <Carousel images={hhImages} options={{aspectRatio:"10/6"}} />
                     </LazySection>
 
                     <div className={styles.seeMoreText}>
@@ -142,7 +142,7 @@ export default function OurVillas() {
                     </div>
 
                     <LazySection>
-                        <Carousel images={jnImages} />
+                        <Carousel images={jnImages} options={{aspectRatio:"10/6"}} />
                     </LazySection>
 
                     <div className={styles.seeMoreText}>

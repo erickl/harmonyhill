@@ -11,7 +11,8 @@ import styles from "./Carousel.module.css";
 interface Deck {
     images: ImageProps[];
     options? : {
-        rounded?: boolean
+        rounded?: boolean,
+        aspectRatio?: string, 
     };
 }
 
@@ -55,6 +56,9 @@ export default function Carousel({ images, options }: Deck) {
                 {/* 2. Container (The long strip of images) */}
                 <div className={styles.emblaContainer}>
                     {images.map((img, index) => {
+                        if(options?.aspectRatio) {
+                            img.aspectRatio = options.aspectRatio;
+                        }
                         img.options = {
                             ...img.options,
                             index: index,

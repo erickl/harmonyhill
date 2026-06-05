@@ -4,10 +4,10 @@ import { EXT_LINKS } from '@/constants/links';
 import styles from "./NaturesKitchen.module.css";
 
 const images = [
-    { src: "/images/marry-me-pasta.avif", alt: "marry me pasta" },
+    { src: "/images/marry-me-pasta.avif",       alt: "marry me pasta"        },
     { src: "/images/wingko-waffles-vegan.avif", alt: "vegan coconut waffles" },
-    { src: "/images/sushi.avif", alt: "Vegan Sushi" },
-    { src: "/images/floating-breakfast.avif", alt: "floating breakfast" },
+    { src: "/images/sushi.avif",                alt: "Vegan Sushi"           },
+    { src: "/images/floating-breakfast.avif",   alt: "floating breakfast"    },
 ];
 
 export default function NaturesKitchen() {
@@ -38,7 +38,7 @@ export default function NaturesKitchen() {
                     </p>
                 </div>
 
-                <Carousel images={images} />
+                <Carousel images={images} options={{aspectRatio: "10/6"}} />
             </div>
         </section>
     );

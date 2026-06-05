@@ -6,7 +6,8 @@ export default function ReadyForParadise() {
     const floatingBfImg = {
         src: "/images/floating-breakfast.avif",
         alt: "Complimentary floating breakfast",
-        options : {rounded: true}
+        options : {rounded: true},
+        aspectRatio: "10/6"
     };
 
     return (

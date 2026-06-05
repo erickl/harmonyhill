@@ -6,9 +6,9 @@ import LazySection from "./LazySection";
 
 const options = {rounded: true }
 const images = [
-    { src: "/images/gunung-kawi.avif", alt: "Gunung Kawi",   options: options, description: "Immerse yourself in the sacred stillness of Gunung Kawi, the Valley of The Balinese Kings, or partake in a purification ritual at Tirta Empul, Bali's largest spring water temple. Both just 5mins drive away" },
-    { src: "/images/barong2.avif", alt: "Barong Bali",       options: options, description: "Get lost in the bustling town of Ubud - Bali's cultural heartland and our personal vegan food heaven. We are happy to share our favorite eats or organize a driver to take you around this beautiful town." },
-    { src: "/images/batur-optimized.avif", alt: "Kintamani", options: options, description: "Hike up Mount Batur and watch the sun rise over Bali's most sacred Mount Agung, or take a thrilling jeep tour through the lava fields in this UNESCO GeoPark" },
+    { src: "/images/gunung-kawi.avif",     alt: "Gunung Kawi", aspectRatio: "10/6",  options: options, description: "Immerse yourself in the sacred stillness of Gunung Kawi, the Valley of The Balinese Kings, or partake in a purification ritual at Tirta Empul, Bali's largest spring water temple. Both just 5mins drive away" },
+    { src: "/images/barong2.avif",         alt: "Barong Bali", aspectRatio: "10/6",  options: options, description: "Get lost in the bustling town of Ubud - Bali's cultural heartland and our personal vegan food heaven. We are happy to share our favorite eats or organize a driver to take you around this beautiful town." },
+    { src: "/images/batur-optimized.avif", alt: "Kintamani",   aspectRatio: "10/6",  options: options, description: "Hike up Mount Batur and watch the sun rise over Bali's most sacred Mount Agung, or take a thrilling jeep tour through the lava fields in this UNESCO GeoPark" },
 ];
 
 export default function Explore() {

@@ -27,6 +27,7 @@ export default function StayIn() {
                         src={"/images/ricefield2.avif"}
                         alt={"Lush rice paddies near Harmony Hill"}
                         options={{rounded:true}}
+                        aspectRatio="10/6"
                     />
                 </div>
             </div>
