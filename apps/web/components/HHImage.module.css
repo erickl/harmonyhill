@@ -1,8 +1,6 @@
 .imageWrapper {
     position: relative;
     width: 100%;
-    height: 400px;
-    /* Or whatever height fits your villa layout */
     overflow: hidden;
     isolation: isolate;
 }

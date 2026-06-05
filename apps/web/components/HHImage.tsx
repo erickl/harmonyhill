@@ -12,7 +12,9 @@ export default function HHImage({ src, ...props }: ImageProps) {
     }
 
     return (
-        <div className={styles.imageWrapper}>
+        <div className={styles.imageWrapper} 
+            style={{ aspectRatio: props.aspectRatio ?? "16/9" }}
+        >
             <Image
                 className={imgStyle}
                 src={src}

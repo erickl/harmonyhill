@@ -3,16 +3,19 @@
 import React, { useCallback, useMemo, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
-import { ChevronLeft, ChevronRight } from 'lucide-react'; // Or your React Icons
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import HHImage from "./HHImage";
 import { ImageProps } from "@/types";
 import styles from "./Carousel.module.css";
 
 interface Deck {
     images: ImageProps[];
+    options? : {
+        rounded?: boolean
+    };
 }
 
-export default function Carousel({ images }: Deck) {
+export default function Carousel({ images, options }: Deck) {
     const max = 6000;
     const min = 4000;
     const rotationInterval = useMemo(() => Math.floor(Math.random() * (max - min + 1)) + min, []);
@@ -55,7 +58,7 @@ export default function Carousel({ images }: Deck) {
                         img.options = {
                             ...img.options,
                             index: index,
-                            rounded: true
+                            rounded: options?.rounded ?? true
                         };
 
                         return (
