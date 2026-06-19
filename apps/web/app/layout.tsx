@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import localFont from "next/font/local";
 import { Quattrocento } from 'next/font/google';
-import { GoogleTagManager } from '@next/third-parties/google';
+import DelayedGTM from "@/components/DelayedGTM";
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
@@ -49,9 +49,8 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: Readonly<{children: React.ReactNode;}>) {
     return (
         <html lang="en">
-            <GoogleTagManager gtmId="GTM-N5VDX2B4" />
-
             <body className={`${geistSans.variable} ${geistMono.variable} ${quattrocento.className}`}>
+                <DelayedGTM gtmId="GTM-N5VDX2B4" />
                 <Header />
 
                 {children}

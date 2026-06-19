@@ -22,8 +22,6 @@ export default function HeroVideo() {
                 src="/images/hero-video-fallback.avif"
                 alt="Harmony Hill Villa"
                 fill
-                priority={true}
-                fetchPriority="high"
                 className="object-cover"
             />
             <video autoPlay loop muted playsInline
@@ -41,8 +39,6 @@ export default function HeroVideo() {
                     src="/images/logo-white-transparent-background.avif"
                     alt="Harmony Hill Logo"
                     width="540" height="540"
-                    priority={true}
-                    fetchPriority="high"
                     className={styles.logo}
                 />
 
