@@ -1,6 +1,16 @@
 ## Getting Started
 Run ```npm run dev``` and check ```localhost:3000``` to test locally
 
+## Create optimizied prod build
+rm -rf apps/web/.next  
+npm run build -w apps/web  
+npm run start -w apps/web
+
+## Test page speed
+npm install -g lighthouse
+npm run start -w apps/web
+lighthouse http://localhost:3000 --view
+
 ## Deploy on Vercel
 
 Deploy to alpha site: ```harmonyhill-alpha.vercel.app```

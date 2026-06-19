@@ -11,6 +11,10 @@
     "check-types": "next typegen && tsc --noEmit",
     "analyze": "next experimental-analyze"
   },
+  "browserslist": [
+    "defaults and fully supports es6-module",
+    "not dead"
+  ],
   "dependencies": {
     "@harmonyhill/utils": "*",
     "@harmonyhill/database": "*",

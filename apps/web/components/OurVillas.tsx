@@ -1,5 +1,3 @@
-'use client';
-
 import Link from "next/link";
 import styles from "./OurVillas.module.css";
 import Carousel from "./Carousel";

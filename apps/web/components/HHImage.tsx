@@ -22,7 +22,7 @@ export default function HHImage({ src, ...props }: ImageProps) {
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 // Pre load only the first picture, if this image is in a carousel
-                priority={props.options?.index === 0}
+                // priority={props.options?.index === 0}
             />
             {props.description && (
                 <div className={styles.caption}>

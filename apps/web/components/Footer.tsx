@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import { FaInstagram, FaFacebookF, FaWhatsapp, FaPinterestP, } from 'react-icons/fa';
 import { Mail, MapPin } from 'lucide-react';

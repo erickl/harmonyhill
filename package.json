@@ -45,7 +45,7 @@
         "react-day-picker": "^9.14.0",
         "react-icons": "^5.6.0",
         "react-photo-album": "^3.5.1",
-        "vercel": "^54.9.1",
+        "vercel": "^54.12.2",
         "yet-another-react-lightbox": "^3.29.1"
     }
 }

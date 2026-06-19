@@ -1,3 +1,9 @@
+# Extract the new activities booklet
+mkdir -p compressed && for img in *.jpg; do
+  [ -e "$img" ] || continue
+  magick "$img" -quality 75% "compressed/$img"
+done
+
 # Turborepo starter
 
 This Turborepo starter is maintained by the Turborepo core team.
@@ -53,8 +59,6 @@ Without global `turbo`, use your package manager:
 ```sh
 cd my-turborepo
 npx turbo build
-yarn dlx turbo build
-pnpm exec turbo build
 ```
 
 You can build a specific package by using a [filter](https://turborepo.dev/docs/crafting-your-repository/running-tasks#using-filters):
