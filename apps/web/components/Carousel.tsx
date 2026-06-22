@@ -10,9 +10,9 @@ import styles from "./Carousel.module.css";
 
 interface Deck {
     images: ImageProps[];
-    options? : {
+    options?: {
         rounded?: boolean,
-        aspectRatio?: string, 
+        aspectRatio?: string,
     };
 }
 
@@ -56,7 +56,7 @@ export default function Carousel({ images, options }: Deck) {
                 {/* 2. Container (The long strip of images) */}
                 <div className={styles.emblaContainer}>
                     {images.map((img, index) => {
-                        if(options?.aspectRatio) {
+                        if (options?.aspectRatio) {
                             img.aspectRatio = options.aspectRatio;
                         }
                         img.options = {
@@ -79,10 +79,18 @@ export default function Carousel({ images, options }: Deck) {
             </div>
 
             {/* 3. Navigation Buttons */}
-            <button className={`${styles.emblaButton} ${styles.prev}`} onClick={scrollPrev}>
+            <button
+                className={`${styles.emblaButton} ${styles.prev}`}
+                onClick={scrollPrev}
+                aria-label="Previous slide"
+            >
                 <ChevronLeft size={30} />
             </button>
-            <button className={`${styles.emblaButton} ${styles.next}`} onClick={scrollNext}>
+            <button
+                className={`${styles.emblaButton} ${styles.next}`}
+                onClick={scrollNext}
+                aria-label="Next slide"
+            >
                 <ChevronRight size={30} />
             </button>
         </div>
