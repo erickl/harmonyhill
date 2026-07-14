@@ -16,15 +16,15 @@ export default function Header() {
     };
 
     useEffect(() => {
-        if (pathname !== '/') return;
-
-        const handleScroll = () => {
-            setScrolled(window.scrollY > 700);
+        setScrolled(pathname === '/');
+        
+        const handleScroll = () => {           
+            setScrolled(pathname === '/' && window.scrollY < 700);
         };
 
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    }, [pathname]);
 
     return (
         <header className={`${styles.stickyBanner} ${scrolled ? styles.scrolled : ''}`}>
