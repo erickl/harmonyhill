@@ -448,6 +448,19 @@ export function setZone(date : any, keepLocalTime = false) : DateTime  {
     return date;
 }
 
+export function getDatesBetween2(start : DateTime, end : DateTime) : Array<DateTime> {
+    const dates = [];
+    let current = start.startOf('day');
+    const last = end.startOf('day');
+
+    while (current <= last) {
+        dates.push(current);
+        current = current.plus({ days: 1 });
+    }
+
+    return dates;
+};
+
 export function getHotelTimezone() : string {
     return 'Asia/Singapore';
 }
