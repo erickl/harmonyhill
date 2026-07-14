@@ -28,15 +28,57 @@
 }
 
 .logo {
-    max-width: 40%;
-    height: auto;
+    top:0;
+    left:0;
+    height: clamp(4rem,15vw, 12rem);
+    width: clamp(4rem,15vw, 12rem);
+    transform: translate(-00%, -00%);
 }
 
-.slogan {
+.slogan1 {
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    font-size: 0.7rem;
+    margin-bottom: 0rem;
+}
+
+.slogan2 {
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    font-size: 4rem;
+    line-height: 1;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+}
+
+.slogan3 {
     color: white;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     font-size: 1rem;
-    margin-top: 0.5rem;
+    margin-top: 0rem;
+}
+
+.exploreVillasButton {
+    background-color: transparent;
+    color:white;
+    border: 0.1rem solid white;
+    border-radius: 2rem;
+    padding: 1rem 1.3rem;
+    margin-right: 1rem;
+}
+
+.viewAvailabilityButton {
+    background-color: white;
+    color:black;
+    border: 0.1rem solid white;
+    border-radius: 2rem;
+    padding: 1rem 1.3rem;
+    margin-right: 1rem;
+}
+
+
+.heroButtons {
+    margin-top: 3rem;
 }
 
 @media (min-width: 768px) {
