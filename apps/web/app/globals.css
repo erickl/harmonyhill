@@ -81,10 +81,6 @@ video:-ms-controls-panel {
     padding: 0 10px;
 }
 
-#about-us {
-    padding: 30px 25%;
-}
-
 /* reduce padding for smaller screens */
 @media (max-width: 768px) {
     #about-us {

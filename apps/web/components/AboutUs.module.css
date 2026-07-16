@@ -1,9 +1,28 @@
-.section {
-    padding: 0 10px;
+.aboutUsSection {
+    padding: 100px;
+}
+
+#about-us {
+    padding: 30px 25%;
+}
+
+.aboutTitle {
+    text-align: start;
 }
 
 .textBody {
     margin: 0;
-    align-items: center;
+    align-items: start;
 }
 
+.divider {
+    width: 5rem;
+    margin-left: 0;
+    border-top: 0.1rem solid rgba(153, 125, 23, 0.775);
+}
+
+.aboutUsBody {
+    display: flex;
+    flex-direction: row;
+    gap:3rem;
+}
