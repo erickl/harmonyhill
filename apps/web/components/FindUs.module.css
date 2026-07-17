@@ -1,0 +1,32 @@
+.findUsTitle {
+    text-align: center;
+}
+
+.findUsSection {
+    background-color: rgb(1, 49, 39);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+.sectionBody {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.bodyText {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mapsButton {
+    background-color: transparent;
+    color:white;
+    border: 0.1rem solid white;
+    border-radius: 2rem;
+    padding: 1rem 1.3rem;
+    margin-right: 1rem;
+}

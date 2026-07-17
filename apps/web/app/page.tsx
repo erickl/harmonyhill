@@ -7,6 +7,7 @@ import StayIn from "@/components/StayIn";
 import Explore from "@/components/Explore";
 import ReadyForParadise from "@/components/ReadyForParadise";
 import GoodToKnow from "@/components/GoodToKnow";
+import FindUs from "@/components/FindUs";
 import Faq from "@/components/Faq";
 import LeafDivider from "@/components/LeafDivider";
 import FloatingButtons from "@/components/FloatingButtons";
@@ -22,6 +23,7 @@ export default function Home() {
                 <NaturesKitchen />
                 <StayIn />
                 <Explore />
+                <FindUs />
                 <ReadyForParadise />
                 <LeafDivider />
                 {/* <LazySection><Availability /></LazySection> */}
