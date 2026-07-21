@@ -1,4 +1,4 @@
-export interface ImageProps {
+export interface ImageProps extends React.HTMLAttributes<HTMLDivElement> {
     src: string;
     alt?: string;
     description?: string;

@@ -22,7 +22,7 @@ body {
     color: var(--foreground);
     background: var(--background);
 
-    font-family: Quattrocento, sans-serif;
+    font-family: Cormorant_Garamond, sans-serif;
     /* Set the default font */
     line-height: 1.6;
     font-size: 18px;
