@@ -1,0 +1,42 @@
+.section {
+    margin: 2rem;
+}
+
+.chapter {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex: 0 0 auto;
+}
+
+.chapterAbout {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.chapterText {
+    overflow-y: scroll;
+}
+
+.chapterList {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.emblaViewport {
+    flex: 1;
+    overflow: hidden;
+    /* Gentle overflow peek on the right */
+    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    mask-image: linear-gradient(to right, black 85%, transparent 100%);
+}
+
+.emblaContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}

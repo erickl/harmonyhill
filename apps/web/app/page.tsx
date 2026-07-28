@@ -8,6 +8,7 @@ import Explore from "@/components/Explore";
 import ReadyForParadise from "@/components/ReadyForParadise";
 import GoodToKnow from "@/components/GoodToKnow";
 import FindUs from "@/components/FindUs";
+import WhatAwaitsYou from "@/components/WhatAwaitsYou";
 import Faq from "@/components/Faq";
 import LeafDivider from "@/components/LeafDivider";
 import FloatingButtons from "@/components/FloatingButtons";
@@ -18,8 +19,8 @@ export default function Home() {
             <main className={styles.main}>
                 <HeroVideo />
                 <AboutUs />
-
                 <OurVillas />
+                <WhatAwaitsYou />
                 <NaturesKitchen />
                 <StayIn />
                 <Explore />

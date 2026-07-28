@@ -3,10 +3,11 @@
 import React, { useCallback, useMemo, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 import HHImage from "./HHImage";
 import { ImageProps } from "@/types";
 import styles from "./Carousel.module.css";
+import SlidePrev from '@/components/SlidePrev';
+import SlideNext from '@/components/SlideNext';
 
 interface Deck extends React.HTMLAttributes<HTMLDivElement> {
     images: ImageProps[];
@@ -83,20 +84,12 @@ export default function Carousel({ style, images, options }: Deck) {
             </div>
 
             {/* 3. Navigation Buttons */}
-            <button
-                className={`${styles.emblaButton} ${styles.prev}`}
+            <SlidePrev 
                 onClick={scrollPrev}
-                aria-label="Previous slide"
-            >
-                <ChevronLeft size={30} />
-            </button>
-            <button
-                className={`${styles.emblaButton} ${styles.next}`}
+            />
+            <SlideNext 
                 onClick={scrollNext}
-                aria-label="Next slide"
-            >
-                <ChevronRight size={30} />
-            </button>
+            />
         </div>
     );
 }
