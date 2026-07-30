@@ -133,7 +133,7 @@ export default function WhatAwaitsYou({}) {
                         <div className={styles.chapter}>
                             <Image 
                                 src="/images/breakfast-nook-cat.avif"
-                                alt="Rice paddy tour"
+                                alt="Breakfast with a view and a cat"
                                 width={330}
                                 height={533}
                                 style={{ 
@@ -169,6 +169,32 @@ export default function WhatAwaitsYou({}) {
                                         terrace.
                                     </li>
                                 </ul>
+                            </div>
+                        </div>
+                        <div className={styles.chapter}>
+                            <Image 
+                                src="/images/rice-paddy-view-2.avif"
+                                alt="Rice paddy view"
+                                width={300}
+                                height={533}
+                                style={{ 
+                                    objectFit: 'cover',
+                                    objectPosition: '50% 20%'
+                                }}
+                            />
+                            <div className={styles.chapterAbout}>
+                                <h3>
+                                    Cradled by the Jungle
+                                </h3>
+                                <span>
+                                    Extending out toward the canopy, each villa’s <br/>
+                                    private wooden deck offers an open-air front <br/> 
+                                    row to the lush valley below. It’s a space <br/> 
+                                    designed for whatever pace you choose, <br/> 
+                                    whether that’s a morning yoga practice, a few <br/> 
+                                    quiet moments of meditation, or simply <br/> 
+                                    sipping coffee as the jungle valley comes alive.
+                                </span>
                             </div>
                         </div>
                         {/* Empty chapter to enable user to see the last chapter clearly */}
