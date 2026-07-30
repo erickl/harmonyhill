@@ -13,10 +13,11 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-}
-
-.chapterText {
+    height: 533px;
     overflow-y: scroll;
+    /* Gentle overflow peek on the right */
+    -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
 }
 
 .chapterList {
