@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import localFont from "next/font/local";
-import { Quattrocento } from 'next/font/google';
+import { Cormorant_Garamond, DM_Sans } from 'next/font/google';
 import DelayedGTM from "@/components/DelayedGTM";
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
@@ -18,9 +18,14 @@ const geistMono = localFont({
     variable: "--font-geist-mono",
 });
 
-// Configure the font
-const quattrocento = Quattrocento({
-    weight: ['400', '700'], // Choose the weights you need
+const cormorantGaramond = Cormorant_Garamond({
+    weight: ['400', '700'], 
+    subsets: ['latin'],
+    display: 'swap',
+});
+
+const dmSans = DM_Sans({
+    weight: ['200'], 
     subsets: ['latin'],
     display: 'swap',
 });
@@ -46,10 +51,12 @@ export const metadata: Metadata = {
     },
 };
 
+const bodyClass = `${geistSans.variable} ${geistMono.variable} ${cormorantGaramond.className}`;
+
 export default function RootLayout({children}: Readonly<{children: React.ReactNode;}>) {
     return (
         <html lang="en">
-            <body className={`${geistSans.variable} ${geistMono.variable} ${quattrocento.className}`}>
+            <body className={bodyClass}>
                 <DelayedGTM gtmId="GTM-N5VDX2B4" />
                 <Header />
 

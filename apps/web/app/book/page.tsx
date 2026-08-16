@@ -20,7 +20,8 @@ const images = [
 ];
 
 const mainContainerStyle = {
-    maxWidth: "768px",
+    width: "min(100%, 900px)",
+    margin: "0 auto",
     marginLeft: "auto",
     marginRight: "auto",
 }
@@ -29,12 +30,16 @@ export default function Book() {
     return (
         <main>
             <div style={mainContainerStyle}>
-                <Carousel images={images} options={{rounded: false}} />
-                <div style={{paddingLeft: "1.5rem", paddingRight: "1.5rem"}}>
-                    <h1>
+                <Carousel
+                    style={{marginTop:"75px"}}
+                    images={images} 
+                    options={{rounded: false}} 
+                />
+                <div>
+                    <h1 style={{marginLeft:"1rem", marginRight:"1rem"}}>
                         Book Your Stay
                     </h1>
-                    <div>
+                    <div  style={{marginLeft:"1rem", marginRight:"1rem"}}>
                         Please enter your dates below to see availability. We cannot wait to welcome you!
                     </div>
                     <SirvoyBooking />

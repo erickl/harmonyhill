@@ -1,25 +1,34 @@
 .bookNowHeader {
     margin: 0.3rem;
     padding: 0.3rem;
-    border: 2px solid white;
+    border: 0.1rem solid white;
+    border-radius: 20px;
     width: fit-content;
     white-space: nowrap
 }
 
 .stickyBanner {
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(17, 72, 47, 0.9);
+    
+    /* background-color: transparent rgba(17, 72, 47, 0.9); */
     text-align: center;
     font-size: 0.8em;
     z-index: 1000;
     padding-top: 0.7em;
     padding-bottom: 0.7em;
+    background-color: #E8E0D0;
+    color:black; 
+    transition: background-color 0.3s ease; 
+}
+
+.stickyBanner.scrolled {
+    background-color: transparent;
+    color:white;
 }
 
 .stickyBanner a {
-    color: white;
     text-decoration: none;
     font-weight: bold;
 }
@@ -34,7 +43,7 @@
     align-items: center;
     padding: 0rem 0rem;
     font-size: 1.2rem;
-    color: white;
+    
     background-color: none;
     z-index: 1;
     /* 
@@ -58,17 +67,16 @@
     text-decoration: none;
     color: inherit;
     /* Remove underline & purple color from links */
-    font-weight: bold;
-    /* Bold text */
+    font-size: 0.8rem;
     padding: 0.5rem 1rem;
     /* Add some padding to links */
 }
 
 .navLinksContainer {
-    flex-grow: 1;
-    /* Take up ALL space between 'Book Now' and the right edge */
+    /* flex-grow: 1; */
     display: flex;
-    justify-content: center;
+    margin-left: auto;
+
     /* Centers the UL inside that specific space */
 }
 
@@ -78,10 +86,11 @@
 }
 
 .mainNavLinks {
-    gap: 1rem;
+    gap: .2rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: none;
     padding: 20px 0;

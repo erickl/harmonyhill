@@ -57,19 +57,37 @@ export default function HeroVideo() {
                 className={styles.heroContainer} 
                 style={{ width: '100%', height: '100%', position: 'absolute', inset: 0, objectFit: 'cover' }}
             />
+
+            <Image 
+                src="/images/logo-white-transparent-background.avif" 
+                alt="Harmony Hill Logo" 
+                width="180" height="180"
+                className={styles.logo} 
+            />
                 
             <div className={styles.overlay}>
-                <Image 
-                    src="/images/logo-white-transparent-background.avif" 
-                    alt="Harmony Hill Logo" 
-                    width="540" height="540"
-                    className={styles.logo} 
-                />
+                
+                <span className={styles.slogan1}>
+                    North of Ubud | Bali
+                </span>
 
-                <h1 className={styles.slogan}>
-                    Two Private Villas in the heart of Bali <br />
-                    100% Vegan
+                <h1 className={styles.slogan2}>
+                    Nourished <br/> By Nature
                 </h1>
+
+                <h3 className={styles.slogan3}>
+                    Two distinct private sanctuaries <br /> in the heart of Bali 
+                </h3>
+
+                <div className={styles.heroButtons}>
+                    <button className={styles.exploreVillasButton}>
+                        EXPLORE VILLAS
+                    </button>
+
+                    <button className={styles.viewAvailabilityButton}>
+                        VIEW AVAILABILITY
+                    </button>
+                </div>
             </div>
         </div >
     );

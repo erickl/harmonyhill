@@ -3,12 +3,13 @@
 import React, { useCallback, useMemo, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 import HHImage from "./HHImage";
 import { ImageProps } from "@/types";
 import styles from "./Carousel.module.css";
+import SlidePrev from '@/components/SlidePrev';
+import SlideNext from '@/components/SlideNext';
 
-interface Deck {
+interface Deck extends React.HTMLAttributes<HTMLDivElement> {
     images: ImageProps[];
     options?: {
         rounded?: boolean,
@@ -16,7 +17,7 @@ interface Deck {
     };
 }
 
-export default function Carousel({ images, options }: Deck) {
+export default function Carousel({ style, images, options }: Deck) {
     const max = 6000;
     const min = 4000;
     const rotationInterval = useMemo(() => Math.floor(Math.random() * (max - min + 1)) + min, []);
@@ -66,11 +67,15 @@ export default function Carousel({ images, options }: Deck) {
                         };
 
                         return (
-                            <div className={styles.emblaSlide} key={index}>
+                            <div className={styles.emblaSlide} key={index} style={style}>
                                 {slidesInView.includes(index) ? (
-                                    <HHImage {...img} />
+                                    <HHImage 
+                                        {...img} 
+                                    />
                                 ) : (
-                                    <div className="w-full h-[500px] bg-neutral-800 animate-pulse" />
+                                    <div 
+                                        className="w-full h-[500px] bg-neutral-800 animate-pulse"
+                                    />
                                 )}
                             </div>
                         );
@@ -79,20 +84,12 @@ export default function Carousel({ images, options }: Deck) {
             </div>
 
             {/* 3. Navigation Buttons */}
-            <button
-                className={`${styles.emblaButton} ${styles.prev}`}
+            <SlidePrev 
                 onClick={scrollPrev}
-                aria-label="Previous slide"
-            >
-                <ChevronLeft size={30} />
-            </button>
-            <button
-                className={`${styles.emblaButton} ${styles.next}`}
+            />
+            <SlideNext 
                 onClick={scrollNext}
-                aria-label="Next slide"
-            >
-                <ChevronRight size={30} />
-            </button>
+            />
         </div>
     );
 }
