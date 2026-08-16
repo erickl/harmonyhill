@@ -22,15 +22,15 @@ export default function FindUs({}) {
                 <div className={styles.bodyText}>
                     5 min - Tirta Empul Water Temple
                     <br/><br/>
-                    10 min - Gunung Kawi and The Valley of Kings
+                    8 min - Gunung Kawi, an 11th century temple complex
                     <br/><br/>
-                    30 min - Ubud
+                    30 min - Ubud Palace
                     <br/><br/>
-                    30 min - Batur
+                    30 min - Kintamani with gorgeous volcano views
                     <br/><br/>
-                    Maniktawang, Tampaksiring
-                    <br/>
-                    80552 Bali, Indonesia
+                    40 min - Lake Batur
+                    <br/><br/>
+                    Note: Travel times may vary with Bali traffic :)
                     <br/><br/>
                     
                     <a 
