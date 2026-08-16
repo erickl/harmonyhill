@@ -7,10 +7,10 @@ export default function AboutUs() {
             <div className={styles.aboutUsBody}>
                 <div className={styles.textBody}>
                     <hr className={styles.divider} />
-                    <h2 className={styles.aboutTitle}>
-                        "In Bali, time moves differently.<br/>
-                        Here, it stops entirely."
-                    </h2>
+                    <h3 className={styles.aboutTitle}>
+                        Where the jungle takes over,<br/>
+                        and the rest of the world fades out
+                    </h3>
                     <hr className={styles.divider} />
                     <p>At Harmony Hill, we believe the true essence of travel is the space to slow down and 
                         remember what matters. Here, we invite you to trade the frantic noise of the modern 
