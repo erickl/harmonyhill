@@ -1,7 +1,7 @@
 # Extract the new activities booklet
 mkdir -p compressed && for img in *.jpg; do
   [ -e "$img" ] || continue
-  magick "$img" -quality 75% "compressed/$img"
+  magick "$img" -quality 50% "compressed/$img"
 done
 
 # Secrets
