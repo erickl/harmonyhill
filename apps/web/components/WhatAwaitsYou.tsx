@@ -4,8 +4,8 @@ import styles from "./WhatAwaitsYou.module.css";
 import Image from "next/image";
 import useEmblaCarousel from 'embla-carousel-react';
 import { useCallback } from 'react';
-import SlidePrev from '@/components/SlidePrev';
-import SlideNext from '@/components/SlideNext';
+import SlidePrev2 from '@/components/SlidePrev2';
+import SlideNext2 from '@/components/SlideNext2';
 
 export default function WhatAwaitsYou({}) {
     const [emblaRef, emblaApi] = useEmblaCarousel({ 
@@ -24,7 +24,7 @@ export default function WhatAwaitsYou({}) {
             </h2>
 
             <div className={styles.chapterList}>
-                <SlidePrev 
+                <SlidePrev2
                     onClick={scrollPrev}
                 />
 
@@ -206,7 +206,7 @@ export default function WhatAwaitsYou({}) {
                     </div>
                 </div>
 
-                <SlideNext 
+                <SlideNext2
                     onClick={scrollNext}
                 />
             </div>

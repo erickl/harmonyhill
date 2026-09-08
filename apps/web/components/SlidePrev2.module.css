@@ -1,0 +1,23 @@
+.emblaButton {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s;
+    z-index: 2;
+    color: black;
+}
+
+.emblaButton:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.prev {
+    left: 10px;
+}
