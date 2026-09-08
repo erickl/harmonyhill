@@ -28,6 +28,16 @@
     gap:3rem;
 }
 
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.image {
+    object-fit: cover;
+}
+
 .mobileOnly { display: block; }
 .desktopOnly { display: none; }
 

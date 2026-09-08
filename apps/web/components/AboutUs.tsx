@@ -30,22 +30,25 @@ export default function AboutUs() {
                     </p>
                 </div>
 
-                <Image 
-                    src="/images/hh-drone-1-small.avif"
-                    alt="harmony hill from above"
-                    width={500}
-                    height={800}
-                    className={styles.desktopOnly}
-                />
+                <div className={styles.imageWrapper}>
+                    <Image 
+                        src="/images/hh-drone-1-small.avif"
+                        alt="harmony hill from above"
+                        fill
+                        className={`${styles.image} ${styles.desktopOnly}`}
+                        sizes="100vw"
+                    />
 
-                <Image 
-                    src="/images/hh-drone-front.avif"
-                    alt="harmony hill from above"
-                    width={999}
-                    height={500}
-                    className={styles.mobileOnly}
-                />
+                    <Image 
+                        src="/images/hh-drone-front.avif"
+                        alt="harmony hill from above"
+                        fill
+                        className={`${styles.image} ${styles.mobileOnly}`}
+                        sizes="100vw"  
+                    />
+                </div>
             </div>
+            
         </section>
     );
 }
