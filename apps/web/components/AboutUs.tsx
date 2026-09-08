@@ -35,6 +35,15 @@ export default function AboutUs() {
                     alt="harmony hill from above"
                     width={500}
                     height={800}
+                    className={styles.desktopOnly}
+                />
+
+                <Image 
+                    src="/images/hh-drone-front.avif"
+                    alt="harmony hill from above"
+                    width={999}
+                    height={500}
+                    className={styles.mobileOnly}
                 />
             </div>
         </section>

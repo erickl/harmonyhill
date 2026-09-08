@@ -24,6 +24,17 @@
 
 .aboutUsBody {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap:3rem;
+}
+
+.mobileOnly { display: block; }
+.desktopOnly { display: none; }
+
+/* For desktops */
+@media (min-width: 1100px) {
+  .mobileOnly { display: none; }
+  .desktopOnly { display: block; }
+
+  .aboutUsBody { flex-direction: row; }
 }

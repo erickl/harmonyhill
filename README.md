@@ -4,6 +4,9 @@ mkdir -p compressed && for img in *.jpg; do
   magick "$img" -quality 50% "compressed/$img"
 done
 
+# Compress one image
+magick hh-drone-front.jpeg -strip -resize 1000x562 -quality 35% hh-drone-front.avif
+
 # Secrets
 - save your secrets at https://console.cloud.google.com/security/secret-manager?project=harmonyhill-1
 
