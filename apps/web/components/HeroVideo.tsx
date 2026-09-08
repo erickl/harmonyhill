@@ -3,6 +3,7 @@
 import { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import styles from "./HeroVideo.module.css";
+import Link from 'next/link';
 
 export default function HeroVideo() {
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -80,13 +81,17 @@ export default function HeroVideo() {
                 </h3>
 
                 <div className={styles.heroButtons}>
-                    <button className={styles.exploreVillasButton}>
-                        EXPLORE VILLAS
-                    </button>
+                    <Link href="/#our-villas">
+                        <button className={styles.exploreVillasButton}>
+                            EXPLORE VILLAS
+                        </button>
+                    </Link>
 
-                    <button className={styles.viewAvailabilityButton}>
-                        VIEW AVAILABILITY
-                    </button>
+                    <Link href="/book">
+                        <button className={styles.viewAvailabilityButton}>
+                            VIEW AVAILABILITY
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div >
