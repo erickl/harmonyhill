@@ -83,6 +83,7 @@
 .hamburger {
     display: none;
     text-align: right;
+    z-index: 1001;
 }
 
 .mainNavLinks {
@@ -108,7 +109,7 @@
         display: none;
         /* Hide by default */
         position: absolute;
-        top: 100%;
+        top: 0%;
         /* Sits right below the banner */
         left: 0;
         width: 100%;
