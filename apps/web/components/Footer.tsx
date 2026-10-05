@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { FaInstagram, FaFacebookF, FaWhatsapp, FaPinterestP, } from 'react-icons/fa';
 import { Mail, MapPin } from 'lucide-react';
 import styles from './Footer.module.css';
+import { EXT_LINKS } from '../constants/links';
 
 export default function Footer() {
     const iconSize = 30;
@@ -13,8 +14,8 @@ export default function Footer() {
                 <div className="contact-us-text col-md-8">
                     <p><b>
                         For direct bookings, questions, suggestions or to discuss partnerships, please contact us on
-                        {" "}<Link href="https://wa.me/message/TVA3I5GFI5VLO1">WhatsApp</Link>{" "} or
-                        {" "}<Link href="mailto:harmonyhillbali@gmail.com" target="_blank">harmonyhillbali@gmail.com</Link>{" "}
+                        {" "}<Link href={EXT_LINKS.WA_REF}>WhatsApp</Link>{" "} or
+                        {" "}<Link href={EXT_LINKS.EMAIL_REF} target="_blank">harmonyhillbali@gmail.com</Link>{" "}
                         or reach out on social media.
                     </b></p>
                 </div>
@@ -31,11 +32,11 @@ export default function Footer() {
                         <FaPinterestP size={iconSize} />
                     </Link>
 
-                    <Link href="https://wa.me/message/TVA3I5GFI5VLO1" target="_blank" className={styles.socialMedIcon}>
+                    <Link href={EXT_LINKS.WA_REF} target="_blank" className={styles.socialMedIcon}>
                         <FaWhatsapp size={iconSize} />
                     </Link>
 
-                    <Link href="mailto:harmonyhillbali@gmail.com" target="_blank" className={styles.socialMedIcon}>
+                    <Link href={EXT_LINKS.EMAIL_REF} target="_blank" className={styles.socialMedIcon}>
                         <Mail size={iconSize} />
                     </Link>
 
