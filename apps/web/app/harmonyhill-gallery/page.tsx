@@ -12,7 +12,7 @@ const images = [
     { src: "/images/infinity-pool-jungle-view.avif",  width: 1200, height: 900,  alt: "infinity pool with jungle valley view"                   },
     { src: "/images/bdr-3-villa-1.avif",              width: 1440, height: 1080, alt: "bed room 3"                                                },
     { src: "/images/bdr-1-villa-1.avif",              width: 1440, height: 1080, alt: "bed room 1"                                                },
-    { src: "/images/waterfall-tour.jpeg",             width: 894,  height: 1280, alt: "waterfall tour"                                          },
+    { src: "/images/waterfall-tour.avif",             width: 894,  height: 1280, alt: "waterfall tour"                                          },
     { src: "/images/living-room-villa-1.avif",        width: 930,  height: 698,  alt: "living room with a view",                                description: "" },
     { src: "/images/villa-1-bath-3-toilet.avif",      width: 1440, height: 1920, alt: "shower and toilet"                                       },
     { src: "/images/rain-shower-copper-bathtub.avif", width: 1400, height: 2100, alt: "open view bathtub and shower"                            },
