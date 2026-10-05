@@ -121,6 +121,10 @@
         z-index: 1000;
     }
 
+    .stickyBanner {
+        color: white;
+    }
+
     /* This class is what the JavaScript will toggle */
     .mainNavLinks.active {
         display: flex !important;
