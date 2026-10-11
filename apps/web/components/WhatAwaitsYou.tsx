@@ -56,7 +56,7 @@ export default function WhatAwaitsYou({ }) {
                                     width: '100%',
                                     height: '433px',
                                     objectFit: 'cover',
-                                    objectPosition: '70% 40%'
+                                    objectPosition: '70% 20%'
                                 }}
                             />
                             <div className={styles.chapterAbout}>

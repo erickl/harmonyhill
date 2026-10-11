@@ -63,8 +63,11 @@
 }
 
 /* For desktops */
-@media (min-width: 900px) {
-    .chapter { flex-direction: row; }
+@media (min-width: 1000px) {
+    .chapter { 
+        flex-direction: row; 
+        width: 60%;
+    }
     
     .emblaViewport {
         /* Gentle overflow peek on the right */

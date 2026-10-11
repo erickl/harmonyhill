@@ -12,7 +12,7 @@ const images = [
 
 export default function NaturesKitchen() {
     return (
-        <section id="natures-kitchen" className={styles.section}>
+        <section id="natures-kitchen"  className={styles.sectionBackground}>
             <div className={styles.content}>
                 <div className={styles.textBody}>
                     <h2 className="section-title">Nature's Kitchen</h2>
@@ -23,7 +23,7 @@ export default function NaturesKitchen() {
                         {" "}<Link
                             href={EXT_LINKS.FOOD_MENU_HH}
                             target="_blank"
-                            className="green-link"
+                            className="white-link"
                         >
                             our nourishing menu
                         </Link>.

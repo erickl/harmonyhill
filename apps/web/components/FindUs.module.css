@@ -35,4 +35,10 @@
     border-radius: 2rem;
     padding: 1rem 1.3rem;
     margin-right: 1rem;
+    cursor: pointer;
+}
+
+.mapsButton:hover {
+  background-color: white;
+  color: #111;
 }

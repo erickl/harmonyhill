@@ -67,7 +67,7 @@
     text-decoration: none;
     color: inherit;
     /* Remove underline & purple color from links */
-    font-size: 0.8rem;
+    font-size: 1.0rem;
     padding: 0.5rem 1rem;
     /* Add some padding to links */
 }
