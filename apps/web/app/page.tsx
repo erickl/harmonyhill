@@ -21,8 +21,8 @@ export default function Home() {
                 <AboutUs />
                 <OurVillas />
                 <WhatAwaitsYou />
-                <NaturesKitchen />
-                <StayIn />
+                {/* <NaturesKitchen /> */}
+                {/* <StayIn /> */}
                 <Explore />
                 <FindUs />
                 <ReadyForParadise />
