@@ -8,8 +8,8 @@
     width: clamp(40px, 8vw, 50px);
     height: clamp(40px, 8vw, 50px);
     
-    background-color: transparent;
-
+    background-color: #E8E0D0;
+    
     border-radius: 50px;
     /* High radius creates the pill shape */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -30,6 +30,7 @@
     font-family: inherit;
     text-decoration: none;
     color: black;
+
     font-size: clamp(0.8rem, 2vw, 1rem);
 
     font-weight: bold;
