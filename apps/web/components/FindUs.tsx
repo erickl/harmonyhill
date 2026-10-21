@@ -4,32 +4,39 @@ import Image from "next/image";
 export default function FindUs({}) {
     return (
         <section className={styles.findUsSection}>
-            <Image 
-                src="/images/find-us-map.png"
-                alt="find us here"
-                width={600}
-                height={533}
-                style={{ 
-                    objectFit: 'cover',
-                    objectPosition: '40% 20%'
-                }}
-            />
+            <div style={{ position: 'relative', width: '100%', height: '500px' }}>
+                <Image 
+                    src="/images/find-us-map.png"
+                    alt="find us here"
+                    fill
+                    style={{ 
+                        objectFit: 'contain',
+                        objectPosition: '40% 20%'
+                    }}
+                />
+            </div>
             <div className={styles.sectionBody}>
                 
             <h2 className={styles.findUsTitle}>
-                Find us in the <br/>heartlands of Bali
+                Find us in the heartlands of Bali
             </h2>
                 <div className={styles.bodyText}>
                     5 min - Tirta Empul Water Temple
-                    <br/><br/>
+                    <br/>
+                    <hr className={styles.line}/>
+                    
                     8 min - Gunung Kawi, an 11th century temple complex
-                    <br/><br/>
+                    <br/>
+                    <hr className={styles.line}/>
                     30 min - Ubud Palace
-                    <br/><br/>
+                    <br/>
+                    <hr className={styles.line}/>
                     30 min - Kintamani with gorgeous volcano views
-                    <br/><br/>
+                    <br/>
+                    <hr className={styles.line}/>
                     40 min - Lake Batur
-                    <br/><br/>
+                    <br/>
+                    <hr className={styles.line}/>
                     Note: Travel times may vary with Bali traffic :)
                     <br/><br/>
                     
