@@ -69,7 +69,7 @@ export default function HeroVideo() {
             <div className={styles.overlay}>
                 
                 <span className={styles.slogan1}>
-                    North of Ubud | Bali
+                    NORTH OF UBUD | BALI
                 </span>
 
                 <h1 className={styles.slogan2}>
