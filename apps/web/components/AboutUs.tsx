@@ -8,7 +8,7 @@ export default function AboutUs() {
                 <div className={styles.textBody}>
                     <hr className={styles.divider} />
                     <h3 className={styles.aboutTitle}>
-                        Where the jungle takes over,<br/>
+                        Where the jungle takes over,
                         and the rest of the world fades out
                     </h3>
                     <hr className={styles.divider} />

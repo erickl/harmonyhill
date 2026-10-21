@@ -1,14 +1,11 @@
 .aboutUsSection {
-    padding: 100px;
-}
-
-#about-us {
-    padding: 30px 25%;
+    padding: 2rem;
 }
 
 .aboutTitle {
     text-align: start;
     font-size: 3rem;
+    line-height: 4rem;
 }
 
 .textBody {
@@ -43,8 +40,16 @@
 
 /* For desktops */
 @media (min-width: 1100px) {
-  .mobileOnly { display: none; }
-  .desktopOnly { display: block; }
+    .textBody {
+        flex: 6;
+    }
 
-  .aboutUsBody { flex-direction: row; }
+    .imageWrapper {
+        flex: 3;
+    }
+
+    .mobileOnly { display: none; }
+    .desktopOnly { display: block; }
+
+    .aboutUsBody { flex-direction: row; }
 }
