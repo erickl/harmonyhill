@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styles from "./ReadyForParadise.module.css";
 import HHImage from './HHImage';
+import { EXT_LINKS } from '../constants/links';
 
 export default function ReadyForParadise() {
     const floatingBfImg = {
@@ -35,7 +36,7 @@ export default function ReadyForParadise() {
                     <div>&hearts; Our Wonderful Team ready to make your stay unforgettable: we provide hotel-level service
                         in the privacy of your own villa</div>
                     <div>&hearts; Homemade vegan lunch, dinners and desserts from our
-                        {" "}<Link href="https://www.canva.com/design/DAGZz36GPtY/OarAkAxLlISRwIHy9tLvfg/view?utm_content=DAGZz36GPtY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8b0707566f" className="green-link" target="_blank">menu</Link>,
+                        {" "}<Link href={EXT_LINKS.FOOD_MENU_HH} className="green-link" target="_blank">menu</Link>,
                         freshly prepared at your request
                     </div>
                 </div>
