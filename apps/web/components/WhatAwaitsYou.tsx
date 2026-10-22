@@ -24,7 +24,7 @@ export default function WhatAwaitsYou({ }) {
             </h2>
 
             <div className={styles.chapterList}>
-                <div className={styles.navigators}>
+                <div className={`${styles.navigators} ${styles.navigatorPrev}`}>
                     <SlidePrev2
                         onClick={scrollPrev}
                     />
@@ -160,7 +160,7 @@ export default function WhatAwaitsYou({ }) {
                                     stories, and experience the quiet wonder of our 
                                     island as a welcomed guest, not just a visitor.
                                 </span>
-                                <ul>
+                                <ul className={styles.bulletList}>
                                     <li>
                                         Life in the Village: Stroll through our local 
                                         pathways as we share the rhythms, traditions, 
@@ -211,7 +211,7 @@ export default function WhatAwaitsYou({ }) {
                                 <h3 className={styles.chapterAboutHeader}>
                                     Morning Rituals & In-Villa Refreshments
                                 </h3>
-                                <ul>
+                                <ul className={styles.bulletList}>
                                     <li>
                                         <strong>A Warm Welcome:</strong> Upon your arrival, enjoy a 
                                         fresh, vibrant basket of local seasonal tropical fruits, 
@@ -280,7 +280,7 @@ export default function WhatAwaitsYou({ }) {
                             </div>
                         </div>
                         {/* Empty chapter to enable user to see the last chapter clearly */}
-                        <div className={styles.desktopOnly}>
+                        <div>
                             <div className={styles.chapter}>
                                 <div
                                     style={{ height: '533px', width: '300px', backgroundColor: 'transparent' }}
@@ -290,7 +290,7 @@ export default function WhatAwaitsYou({ }) {
                     </div>
                 </div>
 
-                <div className={styles.navigators}>
+                <div className={`${styles.navigators} ${styles.navigatorNext}`}>
                     <SlideNext2
                         onClick={scrollNext}
                     />
