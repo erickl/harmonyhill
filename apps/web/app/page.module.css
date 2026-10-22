@@ -123,7 +123,7 @@ button.secondary {
     }
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
 
     .main {
         align-items: center;
@@ -152,7 +152,7 @@ button.secondary {
         align-items: center;
         justify-content: center;
     }
-}
+} */
 
 @media (prefers-color-scheme: dark) {
     .logo {
