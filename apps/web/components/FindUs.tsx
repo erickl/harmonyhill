@@ -15,11 +15,11 @@ export default function FindUs({}) {
                     }}
                 />
             </div>
-            <div className={styles.sectionBody}>
-                
-            <h2 className={styles.findUsTitle}>
-                Find us in the heartlands of Bali
-            </h2>
+            <div className={styles.sectionBody}> 
+                <h2 className={styles.findUsTitle}>
+                    Find us in the heartlands of Bali
+                </h2>
+
                 <div className={styles.bodyText}>
                     5 min - Tirta Empul Water Temple
                     <br/>

@@ -6,7 +6,7 @@
 }
 
 .imgGeneral {
-    overflow: hidden;
+    overflow: auto;
     position: relative;
     object-fit: cover;
     object-position: center;

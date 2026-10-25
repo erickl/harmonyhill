@@ -12,14 +12,7 @@ export default function AboutUs() {
                         and the rest of the world fades out
                     </h3>
                     <hr className={styles.divider} />
-                    <p>At Harmony Hill, we believe the true essence of travel is the space to slow down and 
-                        remember what matters. Here, we invite you to trade the frantic noise of the modern 
-                        world for the vibrant hum of the jungle, and gently reconnect:</p>
-                    <p>.....with the wonders of nature, tuning into the daily symphony of cicadas, rustling palms, and the evening chorus of frogs.</p>
-                    <p>...with the food that nourishes your body, crafted entirely from vibrant, plant-based ingredients.</p>
-                    <p>...with the beautiful Balinese people and the rich cultural heritage of our local village.</p>
-                    <p>...with yourself, finding presence in the steady, living rhythm of the valley.</p>
-                    <br />
+                    
                     <p>Harmony Hill and The Jungle Nook are our two beautiful, nature-immersed sanctuaries, tucked away in a traditional 
                         village in the heart of Bali. Perched gracefully upon a ridge overlooking a gorgeous valley and luscious rice fields, 
                         our location offers the perfect balance of seclusion and exploration. We are a scenic, peaceful 30-minute drive 

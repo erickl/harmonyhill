@@ -25,7 +25,7 @@ export default function OurVillas() {
             <h2 className="section-title">Our Villas</h2>
             <div className={styles.villaRow}>
 
-                <div>
+                <div className={styles.villaColumn}>
                     <h3 className="section-title">Harmony Hill</h3>
                     <div className={styles.villaDescription}>
                         The perfect retreat for families or groups. Our expansive villa features three private
@@ -95,7 +95,7 @@ export default function OurVillas() {
                     </div>
                 </div>
 
-                <div>
+                <div className={styles.villaColumn}>
                     <h3 className="section-title">The Jungle Nook</h3>
                     <div className={styles.villaDescription}>
                         This spacious one-bedroom cottage features a deep-soak bathtub positioned for starlit jungle views

@@ -14,7 +14,6 @@
     
     /* background-color: transparent rgba(17, 72, 47, 0.9); */
     text-align: center;
-    font-size: 0.8em;
     z-index: 1000;
     padding-top: 0.7em;
     padding-bottom: 0.7em;
@@ -42,7 +41,6 @@
     width: 100%;
     align-items: center;
     padding: 0rem 0rem;
-    font-size: 1.2rem;
     
     background-color: none;
     z-index: 1;
@@ -67,7 +65,7 @@
     text-decoration: none;
     color: inherit;
     /* Remove underline & purple color from links */
-    font-size: 1.0rem;
+    font-size: 1.2rem;
     padding: 0.5rem 1rem;
     /* Add some padding to links */
 }
@@ -139,8 +137,6 @@
         display: block !important;
         margin-left: auto;
         padding-right: 20px;
-        font-size: 2rem;
-        font-size: 1.5rem;
         background: none;
         border: none;
         color: white;

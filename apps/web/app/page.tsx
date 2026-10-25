@@ -25,8 +25,8 @@ export default function Home() {
                 {/* <StayIn /> */}
                 <Explore />
                 <FindUs />
-                <ReadyForParadise />
-                <LeafDivider />
+                {/* <ReadyForParadise /> */}
+                {/* <LeafDivider /> */}
                 {/* <LazySection><Availability /></LazySection> */}
                 {/* <LazySection><LeafDivider /></LazySection> */}
                 <GoodToKnow />

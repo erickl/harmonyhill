@@ -84,6 +84,10 @@
     gap: 2rem;
 }
 
+.villaColumn {
+    flex: 1;
+}
+
 .villaDescription {
     height: 10rem;
     overflow-y: auto;
