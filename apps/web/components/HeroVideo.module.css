@@ -1,5 +1,5 @@
 .heroContainer {
-    height: 50vh;
+    height: 100vh;
     /* position: relative;
     width: 100%; 
     overflow: hidden;
@@ -109,10 +109,5 @@
 
     .slogan3 {
         font-size: 1.2rem;
-    }
-
-    .heroContainer {
-        height: 100vh;
-        /* aspect-ratio: 16/9; */
     }
 }

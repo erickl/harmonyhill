@@ -94,6 +94,6 @@ export default function HeroVideo() {
                     </Link>
                 </div>
             </div>
-        </div >
+        </div>
     );
 }
