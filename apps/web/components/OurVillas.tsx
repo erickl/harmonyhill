@@ -76,12 +76,10 @@ export default function OurVillas() {
                             </div>
 
                             <div className={styles.featureItem}>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.2" strokeLinecap="round"
-                                    strokeLinejoin="round">
-                                    <path d="M6 18h12l-1-8a5 5 0 0 0-10 0l-1 8Z" />
-                                    <path d="M9 18v3" />
-                                    <path d="M15 18v3" />
-                                    <path d="M17 10h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1" />
+                                <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+                                    <path d="M6 11.5A4 4 0 0 1 5 4.5a4 4 0 0 1 7-2 4 4 0 0 1 7 2 4 4 0 0 1-1 7A2.5 2.5 0 0 1 18 14v4a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-4a2.5 2.5 0 0 1 0-2.5Z" />
+                                    <path d="M6 14h12" />
+                                    <path d="M6 17h12" />
                                 </svg>
                                 <div className={styles.featureLabel}>Private Chef</div>
                                 <div className={styles.featureDetail}>100% plant-based</div>
@@ -134,12 +132,10 @@ export default function OurVillas() {
 
                         <div className={styles.featureRow}>
                             <div className={styles.featureItem}>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.2" strokeLinecap="round"
-                                    strokeLinejoin="round">
-                                    <path d="M6 18h12l-1-8a5 5 0 0 0-10 0l-1 8Z" />
-                                    <path d="M9 18v3" />
-                                    <path d="M15 18v3" />
-                                    <path d="M17 10h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1" />
+                                <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+                                    <path d="M6 11.5A4 4 0 0 1 5 4.5a4 4 0 0 1 7-2 4 4 0 0 1 7 2 4 4 0 0 1-1 7A2.5 2.5 0 0 1 18 14v4a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-4a2.5 2.5 0 0 1 0-2.5Z" />
+                                    <path d="M6 14h12" />
+                                    <path d="M6 17h12" />
                                 </svg>
                                 <div className={styles.featureLabel}>Private Chef</div>
                                 <div className={styles.featureDetail}>100% plant-based</div>
