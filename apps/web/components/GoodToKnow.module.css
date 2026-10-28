@@ -1,5 +1,5 @@
 .section {
-    padding: 2rem;
+    padding: 0.4rem;
 }
 
 .sectionBody {
@@ -30,7 +30,6 @@
     /* Add space for the leaf icon */
     /* Aligns the first line of text with the icon */
 }
-
 
 .leafBullets svg {
     flex-shrink: 0;
@@ -71,6 +70,9 @@
 }
 
 @media(min-width: 992px) {
+    .section {
+        padding: 2rem;
+    }
 
     .heartImageContainer {
         height: 600px; /* Increased to account for the vertical offset */

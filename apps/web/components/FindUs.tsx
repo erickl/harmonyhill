@@ -7,11 +7,27 @@ export default function FindUs({}) {
             <div style={{ position: 'relative', width: '100%', height: '500px' }}>
                 <Image 
                     src="/images/find-us-map.png"
+                    className={styles.desktopOnly}
                     alt="find us here"
                     fill
                     style={{ 
                         objectFit: 'contain',
                         objectPosition: '40% 20%'
+                    }}
+                />
+                <Image
+                    src="/images/find-us-map-mobile.png"
+                    className={styles.mobileOnly}
+                    alt="find us here"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{
+                        // overwriting the width/height props
+                        width: '100%',
+                        height: '760px',
+                        objectFit: 'contain',
+                        objectPosition: '70% 20%'
                     }}
                 />
             </div>

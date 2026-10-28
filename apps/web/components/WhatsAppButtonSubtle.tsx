@@ -12,12 +12,16 @@ const style : CSSProperties = {
 
 export default function WhatsAppButtonSubtle() {
     return (
-        <div className={styles.subtleFloatingButton}>
-            <Link href={EXT_LINKS.WA_REF} target="_blank" className="social-med-icons" aria-label="WhatsApp link">
-                <div style={style}>
-                    <FaWhatsapp size={25}/>
-                </div>
-            </Link>
+        <div className={styles.floatingAll}>
+            <div className={styles.subtleFloatingButton}>
+                <Link href={EXT_LINKS.WA_REF} target="_blank" className="social-med-icons" aria-label="WhatsApp link">
+                    <div style={style}>
+                        <FaWhatsapp size={25}/>
+                    </div>
+                </Link>
+                
+            </div>
+            <p className={styles.text}>Book direct for the best rates</p>
         </div>
     );
 }

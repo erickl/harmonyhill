@@ -2,7 +2,7 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    background: none;
+    background: rgba(255, 255, 255, 0.25);
     border: none;
     border-radius: 50%;
     cursor: pointer;

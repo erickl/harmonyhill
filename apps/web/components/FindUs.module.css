@@ -21,14 +21,22 @@
     padding: 2rem;
 }
 
+.mobileOnly { display: none; }
+.desktopOnly { display: block; }
+
+/* For mobile */
 @media (max-width: 1000px) {
     .findUsSection {
         flex-direction: column;
+        padding: 0.3rem;
     }
 
     .findUsTitle {
         text-align: center;
     }
+
+    .mobileOnly { display: block; }
+    .desktopOnly { display: none; }
 }
 
 .sectionBody {

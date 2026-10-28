@@ -25,6 +25,39 @@
     padding: 0 0.6em;
 }
 
+.floatingAll {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text {
+    /* Position */
+    z-index: 1000;
+
+    /* width: 150px; */
+    /* height: 60px; */
+
+    width: clamp(240px, 8vw, 250px);
+    height: clamp(25px, 8vw, 35px);
+    
+    background-color: #E8E0D0;
+    
+    border-radius: 50px;
+    /* High radius creates the pill shape */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Soft shadow makes it pop off the page */
+    transition: transform 0.2s ease-in-out;
+    /* Smooth hover effect */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0.1rem;
+    padding: 0 0.1em;
+}
+
 .subtleFloatingButton,
 .subtleFloatingButton a {
     font-family: inherit;
@@ -38,7 +71,7 @@
 }
 
 .subtleFloatingButton:hover {
-    background-color: #8bb28e;
+    background-color: #d2c4a8;
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }

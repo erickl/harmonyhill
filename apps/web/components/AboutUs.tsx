@@ -12,6 +12,10 @@ export default function AboutUs() {
                         and the rest of the world fades out
                     </h3>
                     <hr className={styles.divider} />
+
+                    <div className={styles.desktopOnly}>
+                        <br/><br/>
+                    </div>
                     
                     <p>Harmony Hill and The Jungle Nook are our two beautiful, nature-immersed sanctuaries, tucked away in a traditional 
                         village in the heart of Bali. Perched gracefully upon a ridge overlooking a gorgeous valley and luscious rice fields, 
@@ -21,6 +25,10 @@ export default function AboutUs() {
                         Our aim is to offer you a unique opportunity to connect with the untamed beauty of nature, while enjoying the comfort 
                         of our homes and the thoughtful service of our team.
                     </p>
+
+                    <div className={styles.desktopOnly}>
+                        <br/><br/><br/><br/><br/><br/>
+                    </div>
                 </div>
 
                 <div className={styles.imageWrapper}>

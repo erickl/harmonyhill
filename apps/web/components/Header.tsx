@@ -33,12 +33,9 @@ export default function Header() {
                 
                 <div className={styles.navLinksContainer}>
                     <ul className={`${styles.mainNavLinks} ${isOpen ? styles.active : ""}`} id="main-nav-links">
-                        <li onClick={() => setIsOpen(false)}><Link href="/#about-us">About Us</Link></li>
                         <li onClick={() => setIsOpen(false)}><Link href="/#our-villas">Our Villas</Link></li>
-                        <li onClick={() => setIsOpen(false)}><Link href="/#natures-kitchen">Nature's Kitchen</Link></li>
                         <li onClick={() => setIsOpen(false)}><Link href="/#stay-in">Stay In</Link></li>
                         <li onClick={() => setIsOpen(false)}><Link href="/#explore">Explore</Link></li>
-                        <li onClick={() => setIsOpen(false)}><Link href="/#goodtoknow">Good To Know</Link></li>
                         <li className={styles.bookNowHeader} onClick={() => setIsOpen(false)}><Link href="/book">Reserve</Link></li>
                         {/* <li onClick={() => setIsOpen(false)}><Link href="/#availability">Availability</Link></li> */}
                     </ul>

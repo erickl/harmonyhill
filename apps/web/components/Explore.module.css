@@ -1,5 +1,5 @@
 .sectionBackground {
-    padding: 2rem;
+    padding: 0.3rem;
     text-align: center;
     background-color: rgb(1, 49, 39);
     isolation: isolate;
@@ -11,6 +11,10 @@
 
 /* Big screen */
 @media(min-width:992px) {
+    .sectionBackground {
+        padding: 2rem;
+    }
+
     .hideOnSmallScreens {
         display: flex;
         flex-direction: row;

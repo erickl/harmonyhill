@@ -90,7 +90,7 @@
 
 .villaDescription {
     height: 10rem;
-    overflow-y: auto;
+    min-height: max-content;
 }
 
 @media (max-width: 768px) {
