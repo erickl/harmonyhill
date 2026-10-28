@@ -72,6 +72,7 @@ export default function WhatAwaitsYou({ }) {
                                     excursions. We handle every detail during
                                     the day, giving you full-service support
                                     with total privacy when you need it.
+                                    <br/><br/><br/>
                                 </span>
                             </div>
                         </div>
@@ -113,6 +114,7 @@ export default function WhatAwaitsYou({ }) {
                                     while maximizing your well-being, proving
                                     that thoughtful hospitality and deep
                                     nourishment can go hand in hand.
+                                    <br/><br/><br/>
                                 </span>
                             </div>
                         </div>
@@ -147,7 +149,7 @@ export default function WhatAwaitsYou({ }) {
                                 <h3 className={styles.chapterAboutHeader}>
                                     Experience Authentic Bali
                                 </h3>
-                                <span>
+                                <span className={styles.chapterText}>
                                     Harmony Hill is deeply rooted in the heart of a
                                     traditional Balinese village, far removed from the
                                     crowded resort hubs. We believe the best way to 
@@ -159,25 +161,27 @@ export default function WhatAwaitsYou({ }) {
                                     invitation to learn about Balinese culture, share 
                                     stories, and experience the quiet wonder of our 
                                     island as a welcomed guest, not just a visitor.
+                               
+                                    <ul className={styles.bulletList}>
+                                        <li>
+                                            Life in the Village: Stroll through our local 
+                                            pathways as we share the rhythms, traditions, 
+                                            and timeless philosophy that shape Balinese 
+                                            daily life and culture.
+                                        </li>
+                                        <li>
+                                            Sacred Landscapes: Wander through lush, 
+                                            hand-carved rice paddies and follow quiet 
+                                            trails through the tropical valley.
+                                        </li>
+                                        <li>
+                                            Hidden Waters: Cool down at a serene local 
+                                            waterfall nestled deep in the greenery—a 
+                                            peaceful spot known mostly to our community.
+                                        </li>
+                                    </ul>
+                                    <br/><br/><br/>
                                 </span>
-                                <ul className={styles.bulletList}>
-                                    <li>
-                                        Life in the Village: Stroll through our local 
-                                        pathways as we share the rhythms, traditions, 
-                                        and timeless philosophy that shape Balinese 
-                                        daily life and culture.
-                                    </li>
-                                    <li>
-                                        Sacred Landscapes: Wander through lush, 
-                                        hand-carved rice paddies and follow quiet 
-                                        trails through the tropical valley.
-                                    </li>
-                                    <li>
-                                        Hidden Waters: Cool down at a serene local 
-                                        waterfall nestled deep in the greenery—a 
-                                        peaceful spot known mostly to our community.
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                         <div className={styles.chapter}>
@@ -211,30 +215,33 @@ export default function WhatAwaitsYou({ }) {
                                 <h3 className={styles.chapterAboutHeader}>
                                     Morning Rituals & In-Villa Refreshments
                                 </h3>
-                                <ul className={styles.bulletList}>
-                                    <li>
-                                        <strong>A Warm Welcome:</strong> Upon your arrival, enjoy a 
-                                        fresh, vibrant basket of local seasonal tropical fruits, 
-                                        thoughtfully prepared to welcome you to the valley.
+                                <span className={styles.chapterText}>
+                                    <ul className={styles.bulletList}>
+                                        <li>
+                                            <strong>A Warm Welcome:</strong> Upon your arrival, enjoy a 
+                                            fresh, vibrant basket of local seasonal tropical fruits, 
+                                            thoughtfully prepared to welcome you to the valley.
 
-                                    </li>
-                                    <li>
-                                        <strong>Complimentary Nourishing Breakfast:</strong> Each morning, 
-                                        savor a freshly prepared 100% plant-based breakfast 
-                                        crafted by our chef. Choose from signature favorites 
-                                        like our creamy chia pudding, double-topped 
-                                        avocado/scramble toast or scrumptious Indonesian
-                                        waffles
-                                    </li>
-                                    <li>
-                                        <strong>Artisanal Wanagiri Coffee:</strong> To keep you energized 
-                                        throughout your stay, your villa is fully stocked with 
-                                        unlimited 100% Arabica coffee from the high-altitude 
-                                        region of Wanagiri. Grind and brew your own fresh 
-                                        cup whenever you wish, enjoyed right on your private 
-                                        terrace.
-                                    </li>
-                                </ul>
+                                        </li>
+                                        <li>
+                                            <strong>Complimentary Nourishing Breakfast:</strong> Each morning, 
+                                            savor a freshly prepared 100% plant-based breakfast 
+                                            crafted by our chef. Choose from signature favorites 
+                                            like our creamy chia pudding, double-topped 
+                                            avocado/scramble toast or scrumptious Indonesian
+                                            waffles
+                                        </li>
+                                        <li>
+                                            <strong>Artisanal Wanagiri Coffee:</strong> To keep you energized 
+                                            throughout your stay, your villa is fully stocked with 
+                                            unlimited 100% Arabica coffee from the high-altitude 
+                                            region of Wanagiri. Grind and brew your own fresh 
+                                            cup whenever you wish, enjoyed right on your private 
+                                            terrace.
+                                        </li>
+                                        <br/><br/><br/>
+                                    </ul>
+                                </span>
                             </div>
                         </div>
                         <div className={styles.chapter}>
@@ -268,14 +275,14 @@ export default function WhatAwaitsYou({ }) {
                                 <h3 className={styles.chapterAboutHeader}>
                                     Cradled by the Jungle
                                 </h3>
-                                <span>
+                               <span className={styles.chapterText}>
                                     Extending out toward the canopy, each villa’s 
                                     private wooden deck offers an open-air front 
                                     row to the lush valley below. It’s a space 
                                     designed for whatever pace you choose, 
                                     whether that’s a morning yoga practice, a few 
                                     quiet moments of meditation, or simply 
-                                    sipping coffee as the jungle valley comes alive.
+                                    sipping coffee as the jungle valley comes alive.<br/><br/><br/>
                                 </span>
                             </div>
                         </div>

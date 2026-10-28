@@ -1,5 +1,5 @@
 .aboutUsSection {
-    padding: 2rem;
+    padding: 0.8rem;
 }
 
 .aboutTitle {
@@ -22,7 +22,6 @@
 .aboutUsBody {
     display: flex;
     flex-direction: column;
-    gap:3rem;
 }
 
 .imageWrapper {
@@ -40,6 +39,10 @@
 
 /* For desktops */
 @media (min-width: 1100px) {
+    .aboutUsSection {
+        padding: 2rem;
+    }
+
     .textBody {
         flex: 6;
     }

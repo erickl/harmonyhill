@@ -2,8 +2,6 @@
     margin: 0.5rem;
 }
 
-.mobileOnly { display: block; }
-.desktopOnly { display: none; }
 
 .chapter {
     display: flex;
@@ -116,4 +114,17 @@
 
     .mobileOnly { display: none; }
     .desktopOnly { display: block; }
+}
+
+/* For mobile */
+@media (max-width: 999px) {
+    .mobileOnly { display: block; }
+    .desktopOnly { display: none; }
+
+    .chapterText {
+        max-height: 10rem;
+        overflow-y: scroll;
+        -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+        mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    }
 }
