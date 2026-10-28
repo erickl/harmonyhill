@@ -42,7 +42,7 @@ export default function Header() {
                 </div>
 
                 <button 
-                    className={styles.hamburger} 
+                    className={`${styles.hamburger} ${scrolled ? styles.scrolled : ''}`} 
                     id="hamburger" aria-label="Menu"
                     onClick={toggleMenu}
                 >

@@ -134,6 +134,7 @@
     }
 
     .hamburger {
+        font-size: 1.5rem;
         display: block !important;
         margin-left: auto;
         padding-right: 20px;
@@ -141,5 +142,10 @@
         border: none;
         color: white;
         cursor: pointer;
+    }
+
+    .hamburger.scrolled {
+        background-color: transparent;
+        color:white;
     }
 }
