@@ -29,14 +29,14 @@ export default function Header() {
     return (
         <header className={`${styles.stickyBanner} ${scrolled ? styles.scrolled : ''}`}>
             <nav className={styles.mainNav}>
-                {/* <div className={styles.bookNowHeader}><Link href="/book" target="_blank" rel="noopener">Book Now</Link></div> */}
+                {/* <div className={styles.bookNowHeader}><a href="/book" target="_blank" rel="noopener">Book Now</a></div> */}
                 
                 <div className={styles.navLinksContainer}>
                     <ul className={`${styles.mainNavLinks} ${isOpen ? styles.active : ""}`} id="main-nav-links">
                         <li onClick={() => setIsOpen(false)}><Link href="/#our-villas">Our Villas</Link></li>
                         <li onClick={() => setIsOpen(false)}><Link href="/#stay-in">Stay In</Link></li>
                         <li onClick={() => setIsOpen(false)}><Link href="/#explore">Explore</Link></li>
-                        <li className={styles.bookNowHeader} onClick={() => setIsOpen(false)}><Link href="/book">Reserve</Link></li>
+                        <li className={styles.bookNowHeader} onClick={() => setIsOpen(false)}><a href="/book">Reserve</a></li>
                         {/* <li onClick={() => setIsOpen(false)}><Link href="/#availability">Availability</Link></li> */}
                     </ul>
                 </div>

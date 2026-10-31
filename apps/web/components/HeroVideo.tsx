@@ -87,11 +87,11 @@ export default function HeroVideo() {
                         </button>
                     </Link>
 
-                    <Link href="/book">
+                    <a href="/book">
                         <button className={styles.viewAvailabilityButton}>
                             VIEW AVAILABILITY
                         </button>
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>
