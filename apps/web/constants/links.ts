@@ -10,7 +10,7 @@ const encodedMailMessage = encodeURIComponent("Hi! I'm interested in staying at 
 export const EXT_LINKS = {
     FOOD_MENU_HH: 'https://www.canva.com/design/DAGhYRNTFgc/BkFZ5gh3rJnTuon_lI1OCg/view?utm_content=DAGhYRNTFgc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hffa6aee53f',
     FOOD_MENU_JN: 'https://www.canva.com/design/DAGZCJNzgeA/L9Tz7Y8pdyin1PZQ9KeN7Q/view?utm_content=DAGZCJNzgeA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h99deea3dde',
-    ACTIVITIES_MENU: '/documents/activities-20260816.pdf',
+    ACTIVITIES_MENU: '/documents/activities-20261103.pdf',
     WA_REF: `https://wa.me/${waNumber}?text=${encodedMessage}`,
     EMAIL_REF: `mailto:${email}?subject=${encodedSubject}&body=${encodedMailMessage}`,
 };
