@@ -29,7 +29,7 @@ export default function BookingPolicy() {
             <div className={styles.policyBody}>
                 • Deposits are refundable up to 30 days before your check-in date, minus a <strong>10% administrative
                     fee</strong> and any applicable bank charges.
-                • No refunds will be issued for reasons related to wild life or power outages.
+                {/* • No refunds will be issued for reasons related to wild life or power outages. */}
             </div>
 
             <br />
