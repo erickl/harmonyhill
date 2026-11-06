@@ -1,4 +1,5 @@
 import SirvoyBooking from "@/components/SirvoyBooking";
+import MangoBooking from "@/components/MangoBooking";
 import BookingPolicy from "@/components/BookingPolicy";
 import Carousel from "@/components/Carousel";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -42,7 +43,9 @@ export default function Book() {
                     <div  style={{marginLeft:"1rem", marginRight:"1rem"}}>
                         Please enter your dates below to see availability. We cannot wait to welcome you!
                     </div>
-                    <SirvoyBooking />
+                    {/* <SirvoyBooking /> */}
+
+                    <MangoBooking />
 
                     <div>
                         Any questions? Please don't hesitate to contact us
