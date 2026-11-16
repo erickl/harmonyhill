@@ -31,8 +31,8 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-    title: "Harmony Hill - 100% vegan luxury villas in Bali",
-    description: "Escape to a private 100% vegan villa north of Ubud. Enjoy jungle views, a private infinity pool, and a private chef. Waterfall nearby—book your luxury Bali retreat.",
+    title: "Harmony Hill - Plant-Based Boutique Hotel & Villas in Bali",
+    description: "Vegan boutique hotel & villas north of Ubud: jungle views, infinity pool, private chef & nearby waterfall. Book now!",
     
     metadataBase: new URL('https://harmonyhillbali.com'),
     alternates: {
