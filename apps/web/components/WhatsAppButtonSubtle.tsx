@@ -18,10 +18,14 @@ export default function WhatsAppButtonSubtle() {
                     <div style={style}>
                         <FaWhatsapp size={25}/>
                     </div>
-                </Link>
-                
+                </Link>  
             </div>
-            <p className={styles.text}>Book direct for the best rates</p>
+            
+            <a 
+                href="/book"
+                className={styles.text}>
+                Book direct for the best rates
+            </a>
         </div>
     );
 }
