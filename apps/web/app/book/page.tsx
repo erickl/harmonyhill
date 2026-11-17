@@ -1,4 +1,3 @@
-import SirvoyBooking from "@/components/SirvoyBooking";
 import MangoBooking from "@/components/MangoBooking";
 import BookingPolicy from "@/components/BookingPolicy";
 import Carousel from "@/components/Carousel";
