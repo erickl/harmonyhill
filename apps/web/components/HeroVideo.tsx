@@ -20,7 +20,7 @@ export default function HeroVideo() {
             desktop.media = '(min-width: 768px)';
 
             const mobile = document.createElement('source');
-            mobile.src = '/images/hero-video-mobile-2.mp4';
+            mobile.src = '/images/hero-video-mobile-3.mp4';
             mobile.type = 'video/mp4';
 
             video.appendChild(desktop);

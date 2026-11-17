@@ -6,7 +6,7 @@ import Link from 'next/link';
 import styles from "./thankYou.module.css";
 
 export default function HeroVideo() {
-    const mobileVideo = { src: "/images/hero-video-mobile-2.mp4", height: 406, width: 720 };
+    const mobileVideo = { src: "/images/hero-video-mobile-3.mp4", height: 406, width: 720 };
     const desktopVideo = { src: "/images/hero-video-2.mp4", height: 1080, width: 1920 };
 
     const [video, setVideo] = useState(mobileVideo);
