@@ -41,7 +41,7 @@ export default function AboutUs() {
                     />
 
                     <Image 
-                        src="/images/hh-drone-front.avif"
+                        src="/images/hh-drone-front-2.avif"
                         alt="harmony hill from above"
                         fill
                         className={`${styles.image} ${styles.mobileOnly}`}
