@@ -15,12 +15,12 @@ export default function HeroVideo() {
         // Defer video loading until after initial paint
         const loadVideo = () => {
             const desktop = document.createElement('source');
-            desktop.src = '/images/hero-video.mp4';
+            desktop.src = '/images/hero-video-2.mp4';
             desktop.type = 'video/mp4';
             desktop.media = '(min-width: 768px)';
 
             const mobile = document.createElement('source');
-            mobile.src = '/images/hero-video-mobile.mp4';
+            mobile.src = '/images/hero-video-mobile-2.mp4';
             mobile.type = 'video/mp4';
 
             video.appendChild(desktop);
