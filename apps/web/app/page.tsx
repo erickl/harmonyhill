@@ -7,6 +7,7 @@ import StayIn from "@/components/StayIn";
 import Explore from "@/components/Explore";
 import ReadyForParadise from "@/components/ReadyForParadise";
 import GoodToKnow from "@/components/GoodToKnow";
+import CuratedExperiences from "@/components/CuratedExperiences";
 import FindUs from "@/components/FindUs";
 import WhatAwaitsYou from "@/components/WhatAwaitsYou";
 import Faq from "@/components/Faq";
@@ -24,6 +25,7 @@ export default function Home() {
                 {/* <NaturesKitchen /> */}
                 {/* <StayIn /> */}
                 <Explore />
+                {/* <CuratedExperiences /> */}
                 <FindUs />
                 {/* <ReadyForParadise /> */}
                 {/* <LeafDivider /> */}

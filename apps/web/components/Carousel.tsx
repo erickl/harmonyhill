@@ -4,18 +4,10 @@ import React, { useCallback, useMemo, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import HHImage from "./HHImage";
-import { ImageProps } from "@/types";
+import { Deck } from "@/types";
 import styles from "./Carousel.module.css";
 import SlidePrev from '@/components/SlidePrev';
 import SlideNext from '@/components/SlideNext';
-
-interface Deck extends React.HTMLAttributes<HTMLDivElement> {
-    images: ImageProps[];
-    options?: {
-        rounded?: boolean,
-        aspectRatio?: string,
-    };
-}
 
 export default function Carousel({ style, images, options }: Deck) {
     const max = 6000;

@@ -12,3 +12,11 @@ export interface ImageProps extends React.HTMLAttributes<HTMLDivElement> {
         rounded?: boolean;
     }
 }
+
+export interface Deck extends React.HTMLAttributes<HTMLDivElement> {
+    images: ImageProps[];
+    options?: {
+        rounded?: boolean,
+        aspectRatio?: string,
+    };
+}
