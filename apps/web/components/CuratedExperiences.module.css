@@ -1,0 +1,32 @@
+.main {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.expTabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.expTab {
+    color:rgb(148, 148, 144);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.expTab.selected {
+    color: black;
+    font-size: 1.2rem;
+    border-bottom: 10px solid #ccc;
+}
+
+.tabContent {
+    display: flex;
+    background-size: cover;
+}
+
+.tabContent.active {
+    display: none;
+}
