@@ -19,27 +19,32 @@ function getAdminApp(): App {
         return appInstance;
     }
 
+    const privateKey = process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, '\n');
+    const clientEmail = process.env.FIREBASE_CLIENT_EMAIL;
+    const storageBucket = `${PROJECT_ID}.firebasestorage.app`;
+
     const isEmulator = process.env.FIRESTORE_EMULATOR_HOST || process.env.NODE_ENV === 'development';
     const needsCredentials = process.env.NEXT_PUBLIC_SITE_URL && !isEmulator;
 
-    if (needsCredentials) {
+    //if (needsCredentials) {
+    if (privateKey && clientEmail) {
         const credential: admin.ServiceAccount = {
             projectId: PROJECT_ID,
-            privateKey: process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
-            clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+            privateKey: privateKey,
+            clientEmail: clientEmail,
         };
 
         appInstance = initializeApp({
             credential: admin.credential.cert(credential),
-            storageBucket: `${PROJECT_ID}.firebasestorage.app`,
+            storageBucket: storageBucket,
         });
     } else {
         appInstance = initializeApp({
             projectId: PROJECT_ID,
-        });
-
-        return appInstance;
+            storageBucket
+        }); 
     }
+    return appInstance;
 }
 
 export function getDb() {

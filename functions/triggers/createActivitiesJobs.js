@@ -12,33 +12,33 @@ export const dailyMaintenanceCheck = onSchedule('0 0 * * *', async (event) => {
     await dailyActivitiesCreationWork();
 });
 
-export const dailyActivitiesCreationWork = async() => {
+export const dailyActivitiesCreationWork = async () => {
     console.log("⏰ Scheduled daily activities check running at 00:00 AM UTC...");
-
+    console.log("dailyMaintenanceCheck started, database pkg rebuilt 2026-11-06");
     try {
         const currentBookings = await bookingUtils.getCurrentBookings();
         const futureBookings = await bookingUtils.getFutureBookings();
         const bookings = [...currentBookings, ...futureBookings];
 
-        for(const booking of bookings) {
-            if(utils.isTomorrow(booking.checkInAt)) {
+        for (const booking of bookings) {
+            if (utils.isTomorrow(booking.checkInAt)) {
                 await createCheckInActivity(booking);
                 await createCheckOutActivity(booking);
             }
 
             // If checkout tomorrow, no hk needed tomorrow
-            else if(!utils.isTomorrow(booking.checkOutAt)) { 
+            else if (!utils.isTomorrow(booking.checkOutAt)) {
                 // If checkout is day after tomorrow, give red envelope tomorrow
                 // Note: this won't create a red envelope event for guests staying only 1 night, since there's no "day-after-tomorrow" for them
-                if(utils.isToday(booking.checkOutAt, 2)) {
+                if (utils.isToday(booking.checkOutAt, 2)) {
                     const tomorrow = utils.today(1);
                     await createRedEnvelopeActivity(booking, tomorrow);
                     await createHousekeepingActivity(booking, tomorrow)
                 }
-            }   
+            }
         }
         console.log(`⏰ Activity creation for ${currentBookings.length} done`, new Date().toISOString());
-    } catch(e) {
+    } catch (e) {
         console.log(`⏰ Scheduled daily activities check running at 00:00 AM UTC... Failed: ${e.message}`, new Date().toISOString());
     }
 }
@@ -52,7 +52,7 @@ export const onBookingCreate = onDocumentCreated("bookings/{bookingId}", async (
     if (!snapshot) return;
     const booking = snapshot.data();
 
-    if(utils.isToday(booking.checkInAt)) {
+    if (utils.isToday(booking.checkInAt)) {
         await createCheckInActivity(booking);
         await createCheckOutActivity(booking);
     }
@@ -85,11 +85,11 @@ async function createRedEnvelopeActivity(booking, startingAt) {
     const activitiesPath = activityUtils.createActivityCollectionPath(booking);
     const redEnvelopeActivity = activityUtils.createService(booking, "red-envelope");
     redEnvelopeActivity.startingAt = startingAt;
-    redEnvelopeActivity.startingTime  = startingAt.set({hour: 10});
+    redEnvelopeActivity.startingTime = startingAt.set({ hour: 10 });
     const activityId = adapter.makeActivityId(redEnvelopeActivity);
     const result = await adapter.add(activitiesPath, activityId, redEnvelopeActivity);
-    
-    console.log(`⏰ 🧧 Red envelope activity creation job for ${booking.id} ${result !== false ? "done" : "failed"}`, new Date().toISOString());       
+
+    console.log(`⏰ 🧧 Red envelope activity creation job for ${booking.id} ${result !== false ? "done" : "failed"}`, new Date().toISOString());
     return result;
 }
 
@@ -103,5 +103,5 @@ async function createHousekeepingActivity(booking, startingAt) {
     const result = await adapter.add(activitiesPath, activityId, housekeepingActivity);
 
     console.log(`⏰ 🧹 Housekeeping activity creation job for ${booking.id} ${result !== false ? "done" : "failed"}`, new Date().toISOString());
-    return result;    
+    return result;
 }

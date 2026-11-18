@@ -7,6 +7,10 @@ done
 # Compress one image
 magick hh-drone-front.jpeg -strip -resize 1000x562 -quality 35% hh-drone-front.avif
 
+# Compress video
+ffmpeg -i from.mov -c:v libx264 -crf 29 -preset slow -pix_fmt yuv420p -an -movflags +faststart to.mp4
+Change crf to change the file size. Lower crf => higher quality/size
+
 # Secrets
 - save your secrets at https://console.cloud.google.com/security/secret-manager?project=harmonyhill-1
 

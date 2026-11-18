@@ -12,6 +12,7 @@ export function createService(booking = null, subCategory = null) {
     };
 
     if(subCategory) serviceActivity.subCategory = subCategory;
+    serviceActivity.displayName = serviceActivity.subCategory;
 
     if(booking) {
         serviceActivity.house       = booking.house;
@@ -22,11 +23,11 @@ export function createService(booking = null, subCategory = null) {
             serviceActivity.startingAt = booking.checkInAt;
             serviceActivity.startingTime = booking.checkInTime;
 
-            if(utils.exists(booking, "comments"))        checkIn.comments        = booking.comments;
-            if(utils.exists(booking, "customerInfo"))    checkIn.customerInfo    = booking.customerInfo;
-            if(utils.exists(booking, "specialRequests")) checkIn.specialRequests = booking.specialRequests;
-            if(utils.exists(booking, "promotions"))      checkIn.promotions      = booking.promotions;
-            if(utils.exists(booking, "arrivalInfo"))     checkIn.arrivalInfo     = booking.arrivalInfo;
+            if(utils.exists(booking, "comments"))        serviceActivity.comments        = booking.comments;
+            if(utils.exists(booking, "customerInfo"))    serviceActivity.customerInfo    = booking.customerInfo;
+            if(utils.exists(booking, "specialRequests")) serviceActivity.specialRequests = booking.specialRequests;
+            if(utils.exists(booking, "promotions"))      serviceActivity.promotions      = booking.promotions;
+            if(utils.exists(booking, "arrivalInfo"))     serviceActivity.arrivalInfo     = booking.arrivalInfo;
         } else if(serviceActivity.subCategory === "checkout") {
             serviceActivity.startingAt = booking.checkOutAt;
             serviceActivity.startingTime = booking.checkOutTime;
